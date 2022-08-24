@@ -1,0 +1,4 @@
+.packages/
+.org-cache/
+public/*
+!public/static/
