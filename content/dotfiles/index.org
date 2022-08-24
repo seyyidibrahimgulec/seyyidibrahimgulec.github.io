@@ -1,6 +1,6 @@
 #+title: My personal dotfiles
 * Screenshot
-[[./screenshot.png]]
+[[../static/images/dotfiles-ss-01.png]]
 
 * Alacritty
 #+begin_src yaml :tangle .alacritty.yml

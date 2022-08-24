@@ -1,6 +1,6 @@
 #+title: Personal Emacs Configuration
 * Screenshots
-[[./screenshots/screenshot_01.png]]
+[[../static/images/emacs-ss-01.png]]
 * Applying Changes
 #+begin_src emacs-lisp :tangle config.el
   (defun ig/async-process (command &optional name filter)
