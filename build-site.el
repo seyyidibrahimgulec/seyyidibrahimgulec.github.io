@@ -1,4 +1,3 @@
-
 ;; Set the package installation directory so that packages aren't stored in the
 ;; ~/.emacs.d/elpa path.
 (require 'package)
@@ -16,17 +15,31 @@
 (package-install 'haskell-mode)
 (package-install 'yaml-mode)
 (package-install 'vimrc-mode)
+(package-install 'esxml)
 
 ;; Load the publishing system
 (require 'ox-publish)
+(require 'esxml)
 
 (setq make-backup-files nil)
 
+(defun ig/site-header (info)
+  (let* ((file (plist-get info :output-file)))
+    (concat
+     (sxml-to-xml
+      `(div
+        (div (@ (class "navbar"))
+             (ul (@ (class "nav"))
+                 (li (a (@ (class "first-element") (href "/")) "Homepage") " ")
+                 (li (a (@ (href "/emacs-configuration/index.html")) "Emacs") " ")
+                 (li (a (@ (href "/dotfiles/index.html")) "Dotfiles") " "))))))))
+
 ;; Customize the HTML output
-(setq org-html-validation-link nil            ;; Don't show validation link
+(setq org-html-preamble  #'ig/site-header
+      org-html-validation-link nil            ;; Don't show validation link
       org-html-head-include-scripts nil       ;; Use our own scripts
       org-html-head-include-default-style nil ;; Use our own styles
-      org-html-head "<link rel=\"stylesheet\" href=\"/static/css/miligram.min.css\" />")
+      org-html-head "<link rel=\"stylesheet\" href=\"/static/css/miligram.min.css\" /><link rel=\"stylesheet\" href=\"/static/css/style.css\" />")
 
 ;; Define the publishing project
 (setq org-publish-project-alist
