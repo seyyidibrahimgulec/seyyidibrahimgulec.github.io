@@ -1,13 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>My personal dotfiles</title>
-<meta name="generator" content="Org mode" />
-<link rel="stylesheet" href="/static/css/miligram.min.css" /><link rel="stylesheet" href="/static/css/style.css" />
+<meta name="generator" content="Org mode">
+<link rel="stylesheet" href="/static/css/miligram.min.css" /><link rel="stylesheet" href="/static/css/style.css" /><script src="https://kit.fontawesome.com/13e97c0bd7.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -19,665 +17,665 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orga7dc8d2">Screenshot</a></li>
-<li><a href="#orgf2cd533">Alacritty</a></li>
-<li><a href="#org7ef91a0">Bash</a></li>
-<li><a href="#org4e4fcdb">Emacs</a></li>
-<li><a href="#org7ce86c5">Gtk</a></li>
-<li><a href="#org7c2b666">Starship</a></li>
-<li><a href="#org0abdbf1">Tmux</a></li>
-<li><a href="#org5bab258">Tridactyl</a></li>
-<li><a href="#orgfe0ef2a">Volumeicon</a></li>
-<li><a href="#org09d7fac">Xmobar</a></li>
-<li><a href="#org31024f1">Xmodmap</a></li>
-<li><a href="#org411c34c">Xmonad</a>
+<li><a href="#org714a796">Screenshot</a></li>
+<li><a href="#orgbbd3e9c">Alacritty</a></li>
+<li><a href="#org770cb52">Bash</a></li>
+<li><a href="#org1cb96b6">Emacs</a></li>
+<li><a href="#org223ce57">Gtk</a></li>
+<li><a href="#orgd6a9a6e">Starship</a></li>
+<li><a href="#org86806ec">Tmux</a></li>
+<li><a href="#orgc9e952a">Tridactyl</a></li>
+<li><a href="#orgf11b31f">Volumeicon</a></li>
+<li><a href="#org09dbf15">Xmobar</a></li>
+<li><a href="#org8c342ca">Xmodmap</a></li>
+<li><a href="#org4fe9173">Xmonad</a>
 <ul>
-<li><a href="#org24059cf">Imports</a></li>
-<li><a href="#org475576b">Variables</a></li>
-<li><a href="#org8d5b462">Key Bindings</a></li>
-<li><a href="#org767a063">Mouse Bindings</a></li>
-<li><a href="#org9dad5b3">Layout</a></li>
-<li><a href="#orgd292c2d">Hooks</a></li>
-<li><a href="#orgb3eb46a">Main</a></li>
+<li><a href="#orge070903">Imports</a></li>
+<li><a href="#orgfcef606">Variables</a></li>
+<li><a href="#org8064f26">Key Bindings</a></li>
+<li><a href="#orgd124442">Mouse Bindings</a></li>
+<li><a href="#org4f8f639">Layout</a></li>
+<li><a href="#org8e5b807">Hooks</a></li>
+<li><a href="#org04be9f9">Main</a></li>
 </ul>
 </li>
-<li><a href="#org8d7bade">Xprofile</a></li>
-<li><a href="#orgfe639f1">Xresources</a></li>
-<li><a href="#orgb2e997d">Zsh</a></li>
-<li><a href="#org5dec364">References</a></li>
+<li><a href="#org7b92b5c">Xprofile</a></li>
+<li><a href="#org57b5cdc">Xresources</a></li>
+<li><a href="#org679b71a">Zsh</a></li>
+<li><a href="#org7c9cbe0">References</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orga7dc8d2" class="outline-2">
-<h2 id="orga7dc8d2">Screenshot</h2>
-<div class="outline-text-2" id="text-orga7dc8d2">
+<div id="outline-container-org714a796" class="outline-2">
+<h2 id="org714a796">Screenshot</h2>
+<div class="outline-text-2" id="text-org714a796">
 
 <div class="figure">
-<p><img src="../static/images/dotfiles-ss-01.png" alt="dotfiles-ss-01.png" />
+<p><img src="../static/images/dotfiles-ss-01.png" alt="dotfiles-ss-01.png">
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgf2cd533" class="outline-2">
-<h2 id="orgf2cd533">Alacritty</h2>
-<div class="outline-text-2" id="text-orgf2cd533">
+<div id="outline-container-orgbbd3e9c" class="outline-2">
+<h2 id="orgbbd3e9c">Alacritty</h2>
+<div class="outline-text-2" id="text-orgbbd3e9c">
 <div class="org-src-container">
-<pre class="src src-yaml"><span style="font-weight: bold; font-style: italic;">font</span>:
-  <span style="font-weight: bold; font-style: italic;">normal</span>:
-    <span style="font-weight: bold; font-style: italic;">family</span>: <span style="font-style: italic;">"Roboto Mono"</span>
-  <span style="font-weight: bold; font-style: italic;">size</span>: 10
+<pre class="src src-yaml"><span class="org-variable-name">font</span>:
+  <span class="org-variable-name">normal</span>:
+    <span class="org-variable-name">family</span>: <span class="org-string">"Roboto Mono"</span>
+  <span class="org-variable-name">size</span>: 10
 
-<span style="font-weight: bold; font-style: italic;">window</span>:
-  <span style="font-weight: bold; font-style: italic;">dimensions</span>:
-    <span style="font-weight: bold; font-style: italic;">columns</span>: 0
-    <span style="font-weight: bold; font-style: italic;">lines</span>: 0
+<span class="org-variable-name">window</span>:
+  <span class="org-variable-name">dimensions</span>:
+    <span class="org-variable-name">columns</span>: 0
+    <span class="org-variable-name">lines</span>: 0
 
-  <span style="font-weight: bold; font-style: italic;">padding</span>:
-    <span style="font-weight: bold; font-style: italic;">x</span>: 6
-    <span style="font-weight: bold; font-style: italic;">y</span>: 0
+  <span class="org-variable-name">padding</span>:
+    <span class="org-variable-name">x</span>: 6
+    <span class="org-variable-name">y</span>: 0
 
-  <span style="font-weight: bold; font-style: italic;">dynamic_padding</span>: <span style="font-weight: bold; text-decoration: underline;">false</span>
-  <span style="font-weight: bold; font-style: italic;">decorations</span>: none
-  <span style="font-weight: bold; font-style: italic;">opacity</span>: 0.700
+  <span class="org-variable-name">dynamic_padding</span>: <span class="org-constant">false</span>
+  <span class="org-variable-name">decorations</span>: none
+  <span class="org-variable-name">opacity</span>: 0.700
 
-<span style="font-weight: bold; font-style: italic;">mouse</span>:
-  <span style="font-weight: bold; font-style: italic;">hide_when_typing</span>: <span style="font-weight: bold; text-decoration: underline;">true</span>
+<span class="org-variable-name">mouse</span>:
+  <span class="org-variable-name">hide_when_typing</span>: <span class="org-constant">true</span>
 
-<span style="font-weight: bold; font-style: italic;">schemes</span>:
-  <span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">Tokyo Night theme, based on both:</span>
-  <span style="font-weight: bold; font-style: italic;">#   </span><span style="font-weight: bold; font-style: italic;">https://github.com/ghifarit53/tokyonight-vim</span>
-  <span style="font-weight: bold; font-style: italic;">#   </span><span style="font-weight: bold; font-style: italic;">https://github.com/enkia/tokyo-night-vscode-theme</span>
-  <span style="font-weight: bold; font-style: italic;">tokyo-night</span>: <span style="font-weight: bold;">&amp;tokyo-night</span>
-    <span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">Default colors</span>
-    <span style="font-weight: bold; font-style: italic;">primary</span>:
-      <span style="font-weight: bold; font-style: italic;">background</span>: <span style="font-style: italic;">'0x1a1b26'</span>
-      <span style="font-weight: bold; font-style: italic;">foreground</span>: <span style="font-style: italic;">'0xa9b1d6'</span>
+<span class="org-variable-name">schemes</span>:
+  <span class="org-comment-delimiter"># </span><span class="org-comment">Tokyo Night theme, based on both:</span>
+  <span class="org-comment-delimiter">#   </span><span class="org-comment">https://github.com/ghifarit53/tokyonight-vim</span>
+  <span class="org-comment-delimiter">#   </span><span class="org-comment">https://github.com/enkia/tokyo-night-vscode-theme</span>
+  <span class="org-variable-name">tokyo-night</span>: <span class="org-function-name">&amp;tokyo-night</span>
+    <span class="org-comment-delimiter"># </span><span class="org-comment">Default colors</span>
+    <span class="org-variable-name">primary</span>:
+      <span class="org-variable-name">background</span>: <span class="org-string">'0x1a1b26'</span>
+      <span class="org-variable-name">foreground</span>: <span class="org-string">'0xa9b1d6'</span>
 
-    <span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">Normal colors</span>
-    <span style="font-weight: bold; font-style: italic;">normal</span>:
-      <span style="font-weight: bold; font-style: italic;">black</span>:   <span style="font-style: italic;">'0x32344a'</span>
-      <span style="font-weight: bold; font-style: italic;">red</span>:     <span style="font-style: italic;">'0xf7768e'</span>
-      <span style="font-weight: bold; font-style: italic;">green</span>:   <span style="font-style: italic;">'0x9ece6a'</span>
-      <span style="font-weight: bold; font-style: italic;">yellow</span>:  <span style="font-style: italic;">'0xe0af68'</span>
-      <span style="font-weight: bold; font-style: italic;">blue</span>:    <span style="font-style: italic;">'0x7aa2f7'</span>
-      <span style="font-weight: bold; font-style: italic;">magenta</span>: <span style="font-style: italic;">'0xad8ee6'</span>
-      <span style="font-weight: bold; font-style: italic;">cyan</span>:    <span style="font-style: italic;">'0x449dab'</span>
-      <span style="font-weight: bold; font-style: italic;">white</span>:   <span style="font-style: italic;">'0x787c99'</span>
+    <span class="org-comment-delimiter"># </span><span class="org-comment">Normal colors</span>
+    <span class="org-variable-name">normal</span>:
+      <span class="org-variable-name">black</span>:   <span class="org-string">'0x32344a'</span>
+      <span class="org-variable-name">red</span>:     <span class="org-string">'0xf7768e'</span>
+      <span class="org-variable-name">green</span>:   <span class="org-string">'0x9ece6a'</span>
+      <span class="org-variable-name">yellow</span>:  <span class="org-string">'0xe0af68'</span>
+      <span class="org-variable-name">blue</span>:    <span class="org-string">'0x7aa2f7'</span>
+      <span class="org-variable-name">magenta</span>: <span class="org-string">'0xad8ee6'</span>
+      <span class="org-variable-name">cyan</span>:    <span class="org-string">'0x449dab'</span>
+      <span class="org-variable-name">white</span>:   <span class="org-string">'0x787c99'</span>
 
-    <span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">Bright colors</span>
-    <span style="font-weight: bold; font-style: italic;">bright</span>:
-      <span style="font-weight: bold; font-style: italic;">black</span>:   <span style="font-style: italic;">'0x444b6a'</span>
-      <span style="font-weight: bold; font-style: italic;">red</span>:     <span style="font-style: italic;">'0xff7a93'</span>
-      <span style="font-weight: bold; font-style: italic;">green</span>:   <span style="font-style: italic;">'0xb9f27c'</span>
-      <span style="font-weight: bold; font-style: italic;">yellow</span>:  <span style="font-style: italic;">'0xff9e64'</span>
-      <span style="font-weight: bold; font-style: italic;">blue</span>:    <span style="font-style: italic;">'0x7da6ff'</span>
-      <span style="font-weight: bold; font-style: italic;">magenta</span>: <span style="font-style: italic;">'0xbb9af7'</span>
-      <span style="font-weight: bold; font-style: italic;">cyan</span>:    <span style="font-style: italic;">'0x0db9d7'</span>
-      <span style="font-weight: bold; font-style: italic;">white</span>:   <span style="font-style: italic;">'0xacb0d0'</span>
+    <span class="org-comment-delimiter"># </span><span class="org-comment">Bright colors</span>
+    <span class="org-variable-name">bright</span>:
+      <span class="org-variable-name">black</span>:   <span class="org-string">'0x444b6a'</span>
+      <span class="org-variable-name">red</span>:     <span class="org-string">'0xff7a93'</span>
+      <span class="org-variable-name">green</span>:   <span class="org-string">'0xb9f27c'</span>
+      <span class="org-variable-name">yellow</span>:  <span class="org-string">'0xff9e64'</span>
+      <span class="org-variable-name">blue</span>:    <span class="org-string">'0x7da6ff'</span>
+      <span class="org-variable-name">magenta</span>: <span class="org-string">'0xbb9af7'</span>
+      <span class="org-variable-name">cyan</span>:    <span class="org-string">'0x0db9d7'</span>
+      <span class="org-variable-name">white</span>:   <span class="org-string">'0xacb0d0'</span>
 
-  <span style="font-weight: bold; font-style: italic;">tokyo-night-storm</span>: <span style="font-weight: bold;">&amp;tokyo-night-storm</span>
-    <span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">Default colors</span>
-    <span style="font-weight: bold; font-style: italic;">primary</span>:
-      <span style="font-weight: bold; font-style: italic;">background</span>: <span style="font-style: italic;">'0x24283b'</span>
-      <span style="font-weight: bold; font-style: italic;">foreground</span>: <span style="font-style: italic;">'0xa9b1d6'</span>
+  <span class="org-variable-name">tokyo-night-storm</span>: <span class="org-function-name">&amp;tokyo-night-storm</span>
+    <span class="org-comment-delimiter"># </span><span class="org-comment">Default colors</span>
+    <span class="org-variable-name">primary</span>:
+      <span class="org-variable-name">background</span>: <span class="org-string">'0x24283b'</span>
+      <span class="org-variable-name">foreground</span>: <span class="org-string">'0xa9b1d6'</span>
 
-    <span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">Normal colors</span>
-    <span style="font-weight: bold; font-style: italic;">normal</span>:
-      <span style="font-weight: bold; font-style: italic;">black</span>:   <span style="font-style: italic;">'0x32344a'</span>
-      <span style="font-weight: bold; font-style: italic;">red</span>:     <span style="font-style: italic;">'0xf7768e'</span>
-      <span style="font-weight: bold; font-style: italic;">green</span>:   <span style="font-style: italic;">'0x9ece6a'</span>
-      <span style="font-weight: bold; font-style: italic;">yellow</span>:  <span style="font-style: italic;">'0xe0af68'</span>
-      <span style="font-weight: bold; font-style: italic;">blue</span>:    <span style="font-style: italic;">'0x7aa2f7'</span>
-      <span style="font-weight: bold; font-style: italic;">magenta</span>: <span style="font-style: italic;">'0xad8ee6'</span>
-      <span style="font-weight: bold; font-style: italic;">cyan</span>:    <span style="font-style: italic;">'0x449dab'</span>
-      <span style="font-weight: bold; font-style: italic;">white</span>:   <span style="font-style: italic;">'0x9699a8'</span>
+    <span class="org-comment-delimiter"># </span><span class="org-comment">Normal colors</span>
+    <span class="org-variable-name">normal</span>:
+      <span class="org-variable-name">black</span>:   <span class="org-string">'0x32344a'</span>
+      <span class="org-variable-name">red</span>:     <span class="org-string">'0xf7768e'</span>
+      <span class="org-variable-name">green</span>:   <span class="org-string">'0x9ece6a'</span>
+      <span class="org-variable-name">yellow</span>:  <span class="org-string">'0xe0af68'</span>
+      <span class="org-variable-name">blue</span>:    <span class="org-string">'0x7aa2f7'</span>
+      <span class="org-variable-name">magenta</span>: <span class="org-string">'0xad8ee6'</span>
+      <span class="org-variable-name">cyan</span>:    <span class="org-string">'0x449dab'</span>
+      <span class="org-variable-name">white</span>:   <span class="org-string">'0x9699a8'</span>
 
-    <span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">Bright colors</span>
-    <span style="font-weight: bold; font-style: italic;">bright</span>:
-      <span style="font-weight: bold; font-style: italic;">black</span>:   <span style="font-style: italic;">'0x444b6a'</span>
-      <span style="font-weight: bold; font-style: italic;">red</span>:     <span style="font-style: italic;">'0xff7a93'</span>
-      <span style="font-weight: bold; font-style: italic;">green</span>:   <span style="font-style: italic;">'0xb9f27c'</span>
-      <span style="font-weight: bold; font-style: italic;">yellow</span>:  <span style="font-style: italic;">'0xff9e64'</span>
-      <span style="font-weight: bold; font-style: italic;">blue</span>:    <span style="font-style: italic;">'0x7da6ff'</span>
-      <span style="font-weight: bold; font-style: italic;">magenta</span>: <span style="font-style: italic;">'0xbb9af7'</span>
-      <span style="font-weight: bold; font-style: italic;">cyan</span>:    <span style="font-style: italic;">'0x0db9d7'</span>
-      <span style="font-weight: bold; font-style: italic;">white</span>:   <span style="font-style: italic;">'0xacb0d0'</span>
-<span style="font-weight: bold; font-style: italic;">colors</span>: <span style="font-weight: bold;">*tokyo-night</span>
+    <span class="org-comment-delimiter"># </span><span class="org-comment">Bright colors</span>
+    <span class="org-variable-name">bright</span>:
+      <span class="org-variable-name">black</span>:   <span class="org-string">'0x444b6a'</span>
+      <span class="org-variable-name">red</span>:     <span class="org-string">'0xff7a93'</span>
+      <span class="org-variable-name">green</span>:   <span class="org-string">'0xb9f27c'</span>
+      <span class="org-variable-name">yellow</span>:  <span class="org-string">'0xff9e64'</span>
+      <span class="org-variable-name">blue</span>:    <span class="org-string">'0x7da6ff'</span>
+      <span class="org-variable-name">magenta</span>: <span class="org-string">'0xbb9af7'</span>
+      <span class="org-variable-name">cyan</span>:    <span class="org-string">'0x0db9d7'</span>
+      <span class="org-variable-name">white</span>:   <span class="org-string">'0xacb0d0'</span>
+<span class="org-variable-name">colors</span>: <span class="org-function-name">*tokyo-night</span>
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org7ef91a0" class="outline-2">
-<h2 id="org7ef91a0">Bash</h2>
-<div class="outline-text-2" id="text-org7ef91a0">
+<div id="outline-container-org770cb52" class="outline-2">
+<h2 id="org770cb52">Bash</h2>
+<div class="outline-text-2" id="text-org770cb52">
 <div class="org-src-container">
-<pre class="src src-shell"><span style="font-weight: bold; font-style: italic;">#</span>
-<span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">~/.bashrc</span>
-<span style="font-weight: bold; font-style: italic;">#</span>
+<pre class="src src-shell"><span class="org-comment-delimiter">#</span>
+<span class="org-comment-delimiter"># </span><span class="org-comment">~/.bashrc</span>
+<span class="org-comment-delimiter">#</span>
 
-<span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">If not running interactively, don't do anything</span>
-[[ $<span style="font-weight: bold; font-style: italic;">-</span> != *i* ]] &amp;&amp; <span style="font-weight: bold;">return</span>
+<span class="org-comment-delimiter"># </span><span class="org-comment">If not running interactively, don't do anything</span>
+[[ $<span class="org-variable-name">-</span> != *i* ]] &amp;&amp; <span class="org-keyword">return</span>
 
-alias <span style="font-weight: bold; font-style: italic;">ls</span>=<span style="font-style: italic;">'ls --color=auto'</span>
-<span style="font-weight: bold; font-style: italic;">PS1</span>=<span style="font-style: italic;">'[\u@\h \W]\$ '</span>
-alias <span style="font-weight: bold; font-style: italic;">config</span>=<span style="font-style: italic;">'/usr/bin/git --git-dir=/home/ibrahim/.cfg/ --work-tree=/home/ibrahim'</span>
+alias <span class="org-variable-name">ls</span>=<span class="org-string">'ls --color=auto'</span>
+<span class="org-variable-name">PS1</span>=<span class="org-string">'[\u@\h \W]\$ '</span>
+alias <span class="org-variable-name">config</span>=<span class="org-string">'/usr/bin/git --git-dir=/home/ibrahim/.cfg/ --work-tree=/home/ibrahim'</span>
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org4e4fcdb" class="outline-2">
-<h2 id="org4e4fcdb">Emacs</h2>
-<div class="outline-text-2" id="text-org4e4fcdb">
+<div id="outline-container-org1cb96b6" class="outline-2">
+<h2 id="org1cb96b6">Emacs</h2>
+<div class="outline-text-2" id="text-org1cb96b6">
 <ul class="org-ul">
 <li><a href="https://github.com/seyyidibrahimgulec/.emacs.d">My emacs configuration</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org7ce86c5" class="outline-2">
-<h2 id="org7ce86c5">Gtk</h2>
-<div class="outline-text-2" id="text-org7ce86c5">
+<div id="outline-container-org223ce57" class="outline-2">
+<h2 id="org223ce57">Gtk</h2>
+<div class="outline-text-2" id="text-org223ce57">
 <div class="org-src-container">
-<pre class="src src-conf">[<span style="font-weight: bold; text-decoration: underline;">Settings</span>]
-<span style="font-weight: bold; font-style: italic;">gtk-key-theme-name</span> = Emacs
-<span style="font-weight: bold; font-style: italic;">gtk-theme-name</span> = Arc
-<span style="font-weight: bold; font-style: italic;">gtk-icon-theme-name</span> = Arc
+<pre class="src src-conf">[<span class="org-type">Settings</span>]
+<span class="org-variable-name">gtk-key-theme-name</span> = Emacs
+<span class="org-variable-name">gtk-theme-name</span> = Arc
+<span class="org-variable-name">gtk-icon-theme-name</span> = Arc
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org7c2b666" class="outline-2">
-<h2 id="org7c2b666">Starship</h2>
-<div class="outline-text-2" id="text-org7c2b666">
+<div id="outline-container-orgd6a9a6e" class="outline-2">
+<h2 id="orgd6a9a6e">Starship</h2>
+<div class="outline-text-2" id="text-orgd6a9a6e">
 <div class="org-src-container">
-<pre class="src src-conf">[<span style="font-weight: bold; text-decoration: underline;">character</span>]
-<span style="font-weight: bold; font-style: italic;">success_symbol</span> = <span style="font-style: italic;">"[&#955;](bold #9567e0) "</span>
-<span style="font-weight: bold; font-style: italic;">error_symbol</span> = <span style="font-style: italic;">"[&#955;](bold red) "</span>
+<pre class="src src-conf">[<span class="org-type">character</span>]
+<span class="org-variable-name">success_symbol</span> = <span class="org-string">"[&#955;](bold #9567e0) "</span>
+<span class="org-variable-name">error_symbol</span> = <span class="org-string">"[&#955;](bold red) "</span>
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org0abdbf1" class="outline-2">
-<h2 id="org0abdbf1">Tmux</h2>
-<div class="outline-text-2" id="text-org0abdbf1">
+<div id="outline-container-org86806ec" class="outline-2">
+<h2 id="org86806ec">Tmux</h2>
+<div class="outline-text-2" id="text-org86806ec">
 <div class="org-src-container">
-<pre class="src src-conf"><span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">start with mouse mode enabled</span>
+<pre class="src src-conf"><span class="org-comment-delimiter"># </span><span class="org-comment">start with mouse mode enabled</span>
 set -g mouse on
 
-<span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">Change prefix to C-t unbind C-b</span>
+<span class="org-comment-delimiter"># </span><span class="org-comment">Change prefix to C-t unbind C-b</span>
 unbind C-b
 set -g prefix C-t
 
 bind r source-file ~/.tmux.conf
-set -g @plugin <span style="font-style: italic;">'wfxr/tmux-power'</span>
-set -g @tmux_power_theme <span style="font-style: italic;">'violet'</span>
+set -g @plugin <span class="org-string">'wfxr/tmux-power'</span>
+set -g @tmux_power_theme <span class="org-string">'violet'</span>
 
-<span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)</span>
-run <span style="font-style: italic;">'~/.tmux/plugins/tpm/tpm'</span>
+<span class="org-comment-delimiter"># </span><span class="org-comment">Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)</span>
+run <span class="org-string">'~/.tmux/plugins/tpm/tpm'</span>
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org5bab258" class="outline-2">
-<h2 id="org5bab258">Tridactyl</h2>
-<div class="outline-text-2" id="text-org5bab258">
+<div id="outline-container-orgc9e952a" class="outline-2">
+<h2 id="orgc9e952a">Tridactyl</h2>
+<div class="outline-text-2" id="text-orgc9e952a">
 <div class="org-src-container">
 <pre class="src src-vimrc">sanitise tridactyllocal tridactylsync
 colors midnight
 
-<span style="font-weight: bold;">set</span> smoothscroll true
-<span style="font-weight: bold;">set</span> modeindicatorshowkeys true
-<span style="font-weight: bold;">set</span> tabopencontaineraware true
-<span style="font-weight: bold;">set</span> allowautofocus false
-<span style="font-weight: bold;">set</span> newtab https://web<span style="font-weight: bold; text-decoration: underline;">.</span>tabliss<span style="font-weight: bold; text-decoration: underline;">.</span>io/
-<span style="font-weight: bold;">set</span> searchengine duckduckgo
+<span class="org-vimrc-command">set</span> smoothscroll true
+<span class="org-vimrc-command">set</span> modeindicatorshowkeys true
+<span class="org-vimrc-command">set</span> tabopencontaineraware true
+<span class="org-vimrc-command">set</span> allowautofocus false
+<span class="org-vimrc-command">set</span> newtab https://web<span class="org-constant">.</span>tabliss<span class="org-constant">.</span>io/
+<span class="org-vimrc-command">set</span> searchengine duckduckgo
 
-unbind <span style="font-weight: bold; text-decoration: underline;">&lt;</span>F1<span style="font-weight: bold; text-decoration: underline;">&gt;</span>
+unbind <span class="org-constant">&lt;</span>F1<span class="org-constant">&gt;</span>
 
 bind K tabprev
-bind J <span style="font-weight: bold;">tabnext</span>
+bind J <span class="org-vimrc-command">tabnext</span>
 
-bind <span style="font-weight: bold; text-decoration: underline;">+</span> zoom 0.1 true
-bind <span style="font-weight: bold; text-decoration: underline;">-</span> zoom -0.1 true
+bind <span class="org-constant">+</span> zoom <span class="org-vimrc-number">0.1</span> true
+bind <span class="org-constant">-</span> zoom <span class="org-vimrc-number">-0.1</span> true
 
-<span style="font-weight: bold;">command</span> ttcollapse <span style="font-weight: bold; font-style: italic;">js</span> <span style="font-weight: bold; text-decoration: underline;">-</span><span style="font-weight: bold;">d</span>&#8364; browser<span style="font-weight: bold; text-decoration: underline;">.</span><span style="font-weight: bold;">runtime</span><span style="font-weight: bold; text-decoration: underline;">.</span><span style="font-weight: bold;">sendMessage</span>(<span style="font-weight: bold; font-style: italic;">"treestyletab@piro.sakura.ne.jp", {type: 'collapse-tree', tab: JS_ARGS[1]})&#8364;</span>
-<span style="font-weight: bold;">command</span> ttcollapse_recursively <span style="font-weight: bold; font-style: italic;">js</span> <span style="font-weight: bold; text-decoration: underline;">-</span><span style="font-weight: bold;">d</span>&#8364; browser<span style="font-weight: bold; text-decoration: underline;">.</span><span style="font-weight: bold;">runtime</span><span style="font-weight: bold; text-decoration: underline;">.</span><span style="font-weight: bold;">sendMessage</span>(<span style="font-weight: bold; font-style: italic;">"treestyletab@piro.sakura.ne.jp", {type: 'collapse-tree', tab: JS_ARGS[1], recursively: true})&#8364;</span>
-<span style="font-weight: bold;">command</span> ttexpand <span style="font-weight: bold; font-style: italic;">js</span> <span style="font-weight: bold; text-decoration: underline;">-</span><span style="font-weight: bold;">d</span>&#8364; browser<span style="font-weight: bold; text-decoration: underline;">.</span><span style="font-weight: bold;">runtime</span><span style="font-weight: bold; text-decoration: underline;">.</span><span style="font-weight: bold;">sendMessage</span>(<span style="font-weight: bold; font-style: italic;">"treestyletab@piro.sakura.ne.jp", {type: 'expand-tree', tab: JS_ARGS[1]})&#8364;</span>
-<span style="font-weight: bold;">command</span> ttexpand_recursively <span style="font-weight: bold; font-style: italic;">js</span> <span style="font-weight: bold; text-decoration: underline;">-</span><span style="font-weight: bold;">d</span>&#8364; browser<span style="font-weight: bold; text-decoration: underline;">.</span><span style="font-weight: bold;">runtime</span><span style="font-weight: bold; text-decoration: underline;">.</span><span style="font-weight: bold;">sendMessage</span>(<span style="font-weight: bold; font-style: italic;">"treestyletab@piro.sakura.ne.jp", {type: 'expand-tree', tab: JS_ARGS[1], recursively: true})&#8364;</span>
-<span style="font-weight: bold;">command</span> ttcollapse_current_or_parent <span style="font-weight: bold; font-style: italic;">js</span> browser<span style="font-weight: bold; text-decoration: underline;">.</span><span style="font-weight: bold;">runtime</span><span style="font-weight: bold; text-decoration: underline;">.</span><span style="font-weight: bold;">sendMessage</span>(<span style="font-weight: bold; font-style: italic;">"treestyletab@piro.sakura.ne.jp", {type: 'get-tree-structure', tab: 'current'}).then(struct =&gt; browser.runtime.sendMessage("treestyletab@piro.sakura.ne.jp", {type: 'collapse-tree', tab: struct[0].collapsed ? 'parent' : 'current'}))</span>
-<span style="font-weight: bold;">command</span> ttfocus <span style="font-weight: bold; font-style: italic;">js</span> <span style="font-weight: bold; text-decoration: underline;">-</span><span style="font-weight: bold;">d</span>&#8364; browser<span style="font-weight: bold; text-decoration: underline;">.</span><span style="font-weight: bold;">runtime</span><span style="font-weight: bold; text-decoration: underline;">.</span><span style="font-weight: bold;">sendMessage</span>(<span style="font-weight: bold; font-style: italic;">"treestyletab@piro.sakura.ne.jp", {type: 'focus', tab: JS_ARGS[1]})&#8364;</span>
-<span style="font-weight: bold;">command</span> ttindent <span style="font-weight: bold; font-style: italic;">js</span> <span style="font-weight: bold; text-decoration: underline;">-</span><span style="font-weight: bold;">d</span>&#8364; browser<span style="font-weight: bold; text-decoration: underline;">.</span><span style="font-weight: bold;">runtime</span><span style="font-weight: bold; text-decoration: underline;">.</span><span style="font-weight: bold;">sendMessage</span>(<span style="font-weight: bold; font-style: italic;">"treestyletab@piro.sakura.ne.jp", {type: 'indent', tab: JS_ARGS[1]})&#8364;</span>
-<span style="font-weight: bold;">command</span> ttindent_recursively <span style="font-weight: bold; font-style: italic;">js</span> <span style="font-weight: bold; text-decoration: underline;">-</span><span style="font-weight: bold;">d</span>&#8364; browser<span style="font-weight: bold; text-decoration: underline;">.</span><span style="font-weight: bold;">runtime</span><span style="font-weight: bold; text-decoration: underline;">.</span><span style="font-weight: bold;">sendMessage</span>(<span style="font-weight: bold; font-style: italic;">"treestyletab@piro.sakura.ne.jp", {type: 'indent', tab: JS_ARGS[1], followChildren: true})&#8364;</span>
-<span style="font-weight: bold;">command</span> ttoutdent <span style="font-weight: bold; font-style: italic;">js</span> <span style="font-weight: bold; text-decoration: underline;">-</span><span style="font-weight: bold;">d</span>&#8364; browser<span style="font-weight: bold; text-decoration: underline;">.</span><span style="font-weight: bold;">runtime</span><span style="font-weight: bold; text-decoration: underline;">.</span><span style="font-weight: bold;">sendMessage</span>(<span style="font-weight: bold; font-style: italic;">"treestyletab@piro.sakura.ne.jp", {type: 'outdent', tab: JS_ARGS[1]})&#8364;</span>
-<span style="font-weight: bold;">command</span> ttoutdent_recursively <span style="font-weight: bold; font-style: italic;">js</span> <span style="font-weight: bold; text-decoration: underline;">-</span><span style="font-weight: bold;">d</span>&#8364; browser<span style="font-weight: bold; text-decoration: underline;">.</span><span style="font-weight: bold;">runtime</span><span style="font-weight: bold; text-decoration: underline;">.</span><span style="font-weight: bold;">sendMessage</span>(<span style="font-weight: bold; font-style: italic;">"treestyletab@piro.sakura.ne.jp", {type: 'outdent', tab: JS_ARGS[1], followChildren: true})&#8364;</span>
+<span class="org-vimrc-command">command</span> ttcollapse <span class="org-vimrc-option">js</span> <span class="org-constant">-</span><span class="org-vimrc-command">d</span>&#8364; browser<span class="org-constant">.</span><span class="org-vimrc-command">runtime</span><span class="org-constant">.</span><span class="org-function-name">sendMessage</span>(<span class="org-comment">"treestyletab@piro.sakura.ne.jp", {type: 'collapse-tree', tab: JS_ARGS[1]})&#8364;</span>
+<span class="org-vimrc-command">command</span> ttcollapse_recursively <span class="org-vimrc-option">js</span> <span class="org-constant">-</span><span class="org-vimrc-command">d</span>&#8364; browser<span class="org-constant">.</span><span class="org-vimrc-command">runtime</span><span class="org-constant">.</span><span class="org-function-name">sendMessage</span>(<span class="org-comment">"treestyletab@piro.sakura.ne.jp", {type: 'collapse-tree', tab: JS_ARGS[1], recursively: true})&#8364;</span>
+<span class="org-vimrc-command">command</span> ttexpand <span class="org-vimrc-option">js</span> <span class="org-constant">-</span><span class="org-vimrc-command">d</span>&#8364; browser<span class="org-constant">.</span><span class="org-vimrc-command">runtime</span><span class="org-constant">.</span><span class="org-function-name">sendMessage</span>(<span class="org-comment">"treestyletab@piro.sakura.ne.jp", {type: 'expand-tree', tab: JS_ARGS[1]})&#8364;</span>
+<span class="org-vimrc-command">command</span> ttexpand_recursively <span class="org-vimrc-option">js</span> <span class="org-constant">-</span><span class="org-vimrc-command">d</span>&#8364; browser<span class="org-constant">.</span><span class="org-vimrc-command">runtime</span><span class="org-constant">.</span><span class="org-function-name">sendMessage</span>(<span class="org-comment">"treestyletab@piro.sakura.ne.jp", {type: 'expand-tree', tab: JS_ARGS[1], recursively: true})&#8364;</span>
+<span class="org-vimrc-command">command</span> ttcollapse_current_or_parent <span class="org-vimrc-option">js</span> browser<span class="org-constant">.</span><span class="org-vimrc-command">runtime</span><span class="org-constant">.</span><span class="org-function-name">sendMessage</span>(<span class="org-comment">"treestyletab@piro.sakura.ne.jp", {type: 'get-tree-structure', tab: 'current'}).then(struct =&gt; browser.runtime.sendMessage("treestyletab@piro.sakura.ne.jp", {type: 'collapse-tree', tab: struct[0].collapsed ? 'parent' : 'current'}))</span>
+<span class="org-vimrc-command">command</span> ttfocus <span class="org-vimrc-option">js</span> <span class="org-constant">-</span><span class="org-vimrc-command">d</span>&#8364; browser<span class="org-constant">.</span><span class="org-vimrc-command">runtime</span><span class="org-constant">.</span><span class="org-function-name">sendMessage</span>(<span class="org-comment">"treestyletab@piro.sakura.ne.jp", {type: 'focus', tab: JS_ARGS[1]})&#8364;</span>
+<span class="org-vimrc-command">command</span> ttindent <span class="org-vimrc-option">js</span> <span class="org-constant">-</span><span class="org-vimrc-command">d</span>&#8364; browser<span class="org-constant">.</span><span class="org-vimrc-command">runtime</span><span class="org-constant">.</span><span class="org-function-name">sendMessage</span>(<span class="org-comment">"treestyletab@piro.sakura.ne.jp", {type: 'indent', tab: JS_ARGS[1]})&#8364;</span>
+<span class="org-vimrc-command">command</span> ttindent_recursively <span class="org-vimrc-option">js</span> <span class="org-constant">-</span><span class="org-vimrc-command">d</span>&#8364; browser<span class="org-constant">.</span><span class="org-vimrc-command">runtime</span><span class="org-constant">.</span><span class="org-function-name">sendMessage</span>(<span class="org-comment">"treestyletab@piro.sakura.ne.jp", {type: 'indent', tab: JS_ARGS[1], followChildren: true})&#8364;</span>
+<span class="org-vimrc-command">command</span> ttoutdent <span class="org-vimrc-option">js</span> <span class="org-constant">-</span><span class="org-vimrc-command">d</span>&#8364; browser<span class="org-constant">.</span><span class="org-vimrc-command">runtime</span><span class="org-constant">.</span><span class="org-function-name">sendMessage</span>(<span class="org-comment">"treestyletab@piro.sakura.ne.jp", {type: 'outdent', tab: JS_ARGS[1]})&#8364;</span>
+<span class="org-vimrc-command">command</span> ttoutdent_recursively <span class="org-vimrc-option">js</span> <span class="org-constant">-</span><span class="org-vimrc-command">d</span>&#8364; browser<span class="org-constant">.</span><span class="org-vimrc-command">runtime</span><span class="org-constant">.</span><span class="org-function-name">sendMessage</span>(<span class="org-comment">"treestyletab@piro.sakura.ne.jp", {type: 'outdent', tab: JS_ARGS[1], followChildren: true})&#8364;</span>
 
-<span style="font-weight: bold; font-style: italic;">" Collapse/expand current tree</span>
+<span class="org-comment">" Collapse/expand current tree</span>
 bind zc ttcollapse_current_or_parent
 bind zC ttcollapse_recursively root
 bind zo ttexpand current
 bind zO ttexpand_recursively current
 
-<span style="font-weight: bold; font-style: italic;">" Collapse/expand all</span>
+<span class="org-comment">" Collapse/expand all</span>
 bind zm ttcollapse *
 bind zr ttexpand *
 
-<span style="font-weight: bold; font-style: italic;">" Focus parent/root of a tree</span>
+<span class="org-comment">" Focus parent/root of a tree</span>
 bind zp ttfocus parent
 bind zP ttfocus root
 
-<span style="font-weight: bold; font-style: italic;">" Focus next/previous, skipping over subtrees. May also try nextSiblingCyclic/prevSiblingCyclic:</span>
+<span class="org-comment">" Focus next/previous, skipping over subtrees. May also try nextSiblingCyclic/prevSiblingCyclic:</span>
 bind zj ttfocus nextSibling
 bind zk ttfocus prevSibling
 
-<span style="font-weight: bold; font-style: italic;">" Indent/outindent current tab</span>
-bind <span style="font-weight: bold; text-decoration: underline;">&lt;&lt;</span> ttoutdent_recursively current
-bind <span style="font-weight: bold; text-decoration: underline;">&gt;&gt;</span> ttindent_recursively current
+<span class="org-comment">" Indent/outindent current tab</span>
+bind <span class="org-constant">&lt;&lt;</span> ttoutdent_recursively current
+bind <span class="org-constant">&gt;&gt;</span> ttindent_recursively current
 
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-orgfe0ef2a" class="outline-2">
-<h2 id="orgfe0ef2a">Volumeicon</h2>
-<div class="outline-text-2" id="text-orgfe0ef2a">
+<div id="outline-container-orgf11b31f" class="outline-2">
+<h2 id="orgf11b31f">Volumeicon</h2>
+<div class="outline-text-2" id="text-orgf11b31f">
 <div class="org-src-container">
-<pre class="src src-conf">[<span style="font-weight: bold; text-decoration: underline;">Alsa</span>]
-<span style="font-weight: bold; font-style: italic;">card</span>=default
+<pre class="src src-conf">[<span class="org-type">Alsa</span>]
+<span class="org-variable-name">card</span>=default
 
-[<span style="font-weight: bold; text-decoration: underline;">Notification</span>]
-<span style="font-weight: bold; font-style: italic;">show_notification</span>=true
-<span style="font-weight: bold; font-style: italic;">notification_type</span>=0
+[<span class="org-type">Notification</span>]
+<span class="org-variable-name">show_notification</span>=true
+<span class="org-variable-name">notification_type</span>=0
 
-[<span style="font-weight: bold; text-decoration: underline;">StatusIcon</span>]
-<span style="font-weight: bold; font-style: italic;">stepsize</span>=5
-<span style="font-weight: bold; font-style: italic;">onclick</span>=xterm -e <span style="font-style: italic;">'alsamixer'</span>
-<span style="font-weight: bold; font-style: italic;">theme</span>=White Gnome
-<span style="font-weight: bold; font-style: italic;">use_panel_specific_icons</span>=false
-<span style="font-weight: bold; font-style: italic;">lmb_slider</span>=false
-<span style="font-weight: bold; font-style: italic;">mmb_mute</span>=false
-<span style="font-weight: bold; font-style: italic;">use_horizontal_slider</span>=false
-<span style="font-weight: bold; font-style: italic;">show_sound_level</span>=false
-<span style="font-weight: bold; font-style: italic;">use_transparent_background</span>=false
+[<span class="org-type">StatusIcon</span>]
+<span class="org-variable-name">stepsize</span>=5
+<span class="org-variable-name">onclick</span>=xterm -e <span class="org-string">'alsamixer'</span>
+<span class="org-variable-name">theme</span>=White Gnome
+<span class="org-variable-name">use_panel_specific_icons</span>=false
+<span class="org-variable-name">lmb_slider</span>=false
+<span class="org-variable-name">mmb_mute</span>=false
+<span class="org-variable-name">use_horizontal_slider</span>=false
+<span class="org-variable-name">show_sound_level</span>=false
+<span class="org-variable-name">use_transparent_background</span>=false
 
-[<span style="font-weight: bold; text-decoration: underline;">Hotkeys</span>]
-<span style="font-weight: bold; font-style: italic;">up_enabled</span>=false
-<span style="font-weight: bold; font-style: italic;">down_enabled</span>=false
-<span style="font-weight: bold; font-style: italic;">mute_enabled</span>=false
-<span style="font-weight: bold; font-style: italic;">up</span>=XF86AudioRaiseVolume
-<span style="font-weight: bold; font-style: italic;">down</span>=XF86AudioLowerVolume
-<span style="font-weight: bold; font-style: italic;">mute</span>=XF86AudioMute
+[<span class="org-type">Hotkeys</span>]
+<span class="org-variable-name">up_enabled</span>=false
+<span class="org-variable-name">down_enabled</span>=false
+<span class="org-variable-name">mute_enabled</span>=false
+<span class="org-variable-name">up</span>=XF86AudioRaiseVolume
+<span class="org-variable-name">down</span>=XF86AudioLowerVolume
+<span class="org-variable-name">mute</span>=XF86AudioMute
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org09d7fac" class="outline-2">
-<h2 id="org09d7fac">Xmobar</h2>
-<div class="outline-text-2" id="text-org09d7fac">
+<div id="outline-container-org09dbf15" class="outline-2">
+<h2 id="org09dbf15">Xmobar</h2>
+<div class="outline-text-2" id="text-org09dbf15">
 <div class="org-src-container">
-<pre class="src src-haskell"><span style="font-weight: bold; text-decoration: underline;">Config</span> { font <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-style: italic;">"xft:Roboto Mono:pixelsize=19:antialias=true:hinting=true"</span>
-       , additionalFonts <span style="font-weight: bold; font-style: italic;">=</span> [ <span style="font-style: italic;">"xft:Font Awesome 6 Free Solid:pixelsize=18"</span>
-                           , <span style="font-style: italic;">"xft:Font Awesome 6 Brands:pixelsize=18"</span>
+<pre class="src src-haskell"><span class="org-haskell-constructor">Config</span> { font <span class="org-haskell-operator">=</span> <span class="org-string">"xft:Roboto Mono:pixelsize=19:antialias=true:hinting=true"</span>
+       , additionalFonts <span class="org-haskell-operator">=</span> [ <span class="org-string">"xft:Font Awesome 6 Free Solid:pixelsize=18"</span>
+                           , <span class="org-string">"xft:Font Awesome 6 Brands:pixelsize=18"</span>
                            ]
-       , bgColor <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-style: italic;">"#1a1b26"</span>
-       , fgColor <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-style: italic;">"#eff0eb"</span>
-       , alpha <span style="font-weight: bold; font-style: italic;">=</span> 255
-       , position <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-weight: bold; text-decoration: underline;">Static</span> { xpos <span style="font-weight: bold; font-style: italic;">=</span> 20 , ypos <span style="font-weight: bold; font-style: italic;">=</span> 10, width <span style="font-weight: bold; font-style: italic;">=</span> 2520, height <span style="font-weight: bold; font-style: italic;">=</span> 40 }
-       <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">, position = TopSize C 100 40</span>
-       , textOffset <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-weight: bold; font-style: italic;">-</span>1
-       , iconOffset <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-weight: bold; font-style: italic;">-</span>1
-       , lowerOnStart <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-weight: bold; text-decoration: underline;">True</span>
-       , pickBroadest <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-weight: bold; text-decoration: underline;">False</span>
-       , persistent <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-weight: bold; text-decoration: underline;">False</span>
-       , hideOnStart <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-weight: bold; text-decoration: underline;">False</span>
-       , iconRoot     <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-style: italic;">"/home/ibrahim/.xmonad/xpm/"</span>  <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">default: "."</span>
-       , allDesktops <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-weight: bold; text-decoration: underline;">True</span>
-       , overrideRedirect <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-weight: bold; text-decoration: underline;">True</span>
-       , commands <span style="font-weight: bold; font-style: italic;">=</span> [ <span style="font-weight: bold; text-decoration: underline;">Run</span> <span style="font-weight: bold; text-decoration: underline;">Cpu</span> [<span style="font-style: italic;">"-t"</span>, <span style="font-style: italic;">"&lt;fn=1&gt;\xf108&lt;/fn&gt; CPU:(&lt;total&gt;%)"</span>,<span style="font-style: italic;">"-H"</span>,<span style="font-style: italic;">"50"</span>,<span style="font-style: italic;">"--high"</span>,<span style="font-style: italic;">"red"</span>] 20
-                    , <span style="font-weight: bold; text-decoration: underline;">Run</span> <span style="font-weight: bold; text-decoration: underline;">Memory</span> [<span style="font-style: italic;">"-t"</span>, <span style="font-style: italic;">"&lt;fn=1&gt;\xf7c2&lt;/fn&gt; &lt;used&gt;M(&lt;usedratio&gt;%)"</span>] 20
-                    , <span style="font-weight: bold; text-decoration: underline;">Run</span> <span style="font-weight: bold; text-decoration: underline;">Date</span> <span style="font-style: italic;">"&lt;fn=1&gt;\xf017&lt;/fn&gt; %H:%M - %d %B %Y"</span> <span style="font-style: italic;">"date"</span> 50
-                    , <span style="font-weight: bold; text-decoration: underline;">Run</span> <span style="font-weight: bold; text-decoration: underline;">Com</span> <span style="font-style: italic;">"echo"</span> [<span style="font-style: italic;">"&lt;fn=2&gt;\xf17c&lt;/fn&gt;"</span>] <span style="font-style: italic;">"penguin"</span> 3600
-                    , <span style="font-weight: bold; text-decoration: underline;">Run</span> <span style="font-weight: bold; text-decoration: underline;">Com</span> <span style="font-style: italic;">"uname"</span> [<span style="font-style: italic;">"-r"</span>] <span style="font-style: italic;">"kernel"</span> 36000
-                    , <span style="font-weight: bold; text-decoration: underline;">Run</span> <span style="font-weight: bold; text-decoration: underline;">Com</span> <span style="font-style: italic;">"echo"</span> [<span style="font-style: italic;">"&lt;fn=1&gt;\xf242&lt;/fn&gt;"</span>] <span style="font-style: italic;">"baticon"</span> 3600
-                    , <span style="font-weight: bold; text-decoration: underline;">Run</span> <span style="font-weight: bold; text-decoration: underline;">Com</span> <span style="font-style: italic;">".config/xmobar/trayer-padding-icon.sh"</span> <span style="font-weight: bold; text-decoration: underline;">[]</span> <span style="font-style: italic;">"trayerpad"</span> 20
-                    , <span style="font-weight: bold; text-decoration: underline;">Run</span> <span style="font-weight: bold; text-decoration: underline;">UnsafeStdinReader</span>
+       , bgColor <span class="org-haskell-operator">=</span> <span class="org-string">"#1a1b26"</span>
+       , fgColor <span class="org-haskell-operator">=</span> <span class="org-string">"#eff0eb"</span>
+       , alpha <span class="org-haskell-operator">=</span> 255
+       , position <span class="org-haskell-operator">=</span> <span class="org-haskell-constructor">Static</span> { xpos <span class="org-haskell-operator">=</span> 20 , ypos <span class="org-haskell-operator">=</span> 10, width <span class="org-haskell-operator">=</span> 2520, height <span class="org-haskell-operator">=</span> 40 }
+       <span class="org-comment-delimiter">-- </span><span class="org-comment">, position = TopSize C 100 40</span>
+       , textOffset <span class="org-haskell-operator">=</span> <span class="org-haskell-operator">-</span>1
+       , iconOffset <span class="org-haskell-operator">=</span> <span class="org-haskell-operator">-</span>1
+       , lowerOnStart <span class="org-haskell-operator">=</span> <span class="org-haskell-constructor">True</span>
+       , pickBroadest <span class="org-haskell-operator">=</span> <span class="org-haskell-constructor">False</span>
+       , persistent <span class="org-haskell-operator">=</span> <span class="org-haskell-constructor">False</span>
+       , hideOnStart <span class="org-haskell-operator">=</span> <span class="org-haskell-constructor">False</span>
+       , iconRoot     <span class="org-haskell-operator">=</span> <span class="org-string">"/home/ibrahim/.xmonad/xpm/"</span>  <span class="org-comment-delimiter">-- </span><span class="org-comment">default: "."</span>
+       , allDesktops <span class="org-haskell-operator">=</span> <span class="org-haskell-constructor">True</span>
+       , overrideRedirect <span class="org-haskell-operator">=</span> <span class="org-haskell-constructor">True</span>
+       , commands <span class="org-haskell-operator">=</span> [ <span class="org-haskell-constructor">Run</span> <span class="org-haskell-constructor">Cpu</span> [<span class="org-string">"-t"</span>, <span class="org-string">"&lt;fn=1&gt;\xf108&lt;/fn&gt; CPU:(&lt;total&gt;%)"</span>,<span class="org-string">"-H"</span>,<span class="org-string">"50"</span>,<span class="org-string">"--high"</span>,<span class="org-string">"red"</span>] 20
+                    , <span class="org-haskell-constructor">Run</span> <span class="org-haskell-constructor">Memory</span> [<span class="org-string">"-t"</span>, <span class="org-string">"&lt;fn=1&gt;\xf7c2&lt;/fn&gt; &lt;used&gt;M(&lt;usedratio&gt;%)"</span>] 20
+                    , <span class="org-haskell-constructor">Run</span> <span class="org-haskell-constructor">Date</span> <span class="org-string">"&lt;fn=1&gt;\xf017&lt;/fn&gt; %H:%M - %d %B %Y"</span> <span class="org-string">"date"</span> 50
+                    , <span class="org-haskell-constructor">Run</span> <span class="org-haskell-constructor">Com</span> <span class="org-string">"echo"</span> [<span class="org-string">"&lt;fn=2&gt;\xf17c&lt;/fn&gt;"</span>] <span class="org-string">"penguin"</span> 3600
+                    , <span class="org-haskell-constructor">Run</span> <span class="org-haskell-constructor">Com</span> <span class="org-string">"uname"</span> [<span class="org-string">"-r"</span>] <span class="org-string">"kernel"</span> 36000
+                    , <span class="org-haskell-constructor">Run</span> <span class="org-haskell-constructor">Com</span> <span class="org-string">"echo"</span> [<span class="org-string">"&lt;fn=1&gt;\xf242&lt;/fn&gt;"</span>] <span class="org-string">"baticon"</span> 3600
+                    , <span class="org-haskell-constructor">Run</span> <span class="org-haskell-constructor">Com</span> <span class="org-string">".config/xmobar/trayer-padding-icon.sh"</span> <span class="org-haskell-constructor">[]</span> <span class="org-string">"trayerpad"</span> 20
+                    , <span class="org-haskell-constructor">Run</span> <span class="org-haskell-constructor">UnsafeStdinReader</span>
                     ]
 
-       , sepChar <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-style: italic;">"%"</span>
-       , alignSep <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-style: italic;">"}{"</span>
-       , template <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-style: italic;">" &lt;icon=haskell_30.xpm/&gt; %UnsafeStdinReader% }\</span>
-<span style="font-style: italic;">                    \{ &lt;fc=#ee9a00&gt;%date%&lt;/fc&gt; | &lt;fc=#51afef&gt;%penguin% &lt;action=`alacritty -e htop`&gt;%kernel%&lt;/action&gt;&lt;/fc&gt; | &lt;fc=#ecbe7b&gt;&lt;action=`alacritty -e htop`&gt;%cpu%&lt;/action&gt;&lt;/fc&gt; | &lt;fc=#9567e0&gt;&lt;action=`alacritty -e htop`&gt;%memory%&lt;/action&gt;&lt;/fc&gt; %trayerpad%"</span>
+       , sepChar <span class="org-haskell-operator">=</span> <span class="org-string">"%"</span>
+       , alignSep <span class="org-haskell-operator">=</span> <span class="org-string">"}{"</span>
+       , template <span class="org-haskell-operator">=</span> <span class="org-string">" &lt;icon=haskell_30.xpm/&gt; %UnsafeStdinReader% }\</span>
+<span class="org-string">                    \{ &lt;fc=#ee9a00&gt;%date%&lt;/fc&gt; | &lt;fc=#51afef&gt;%penguin% &lt;action=`alacritty -e htop`&gt;%kernel%&lt;/action&gt;&lt;/fc&gt; | &lt;fc=#ecbe7b&gt;&lt;action=`alacritty -e htop`&gt;%cpu%&lt;/action&gt;&lt;/fc&gt; | &lt;fc=#9567e0&gt;&lt;action=`alacritty -e htop`&gt;%memory%&lt;/action&gt;&lt;/fc&gt; %trayerpad%"</span>
        }
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org31024f1" class="outline-2">
-<h2 id="org31024f1">Xmodmap</h2>
-<div class="outline-text-2" id="text-org31024f1">
+<div id="outline-container-org8c342ca" class="outline-2">
+<h2 id="org8c342ca">Xmodmap</h2>
+<div class="outline-text-2" id="text-org8c342ca">
 <div class="org-src-container">
 <pre class="src src-conf">clear lock
 clear control
-<span style="font-weight: bold; font-style: italic;">keycode 66</span> = Control_L
-<span style="font-weight: bold; font-style: italic;">add control</span> = Control_L
-<span style="font-weight: bold; font-style: italic;">add Lock</span> = Control_R
+<span class="org-variable-name">keycode 66</span> = Control_L
+<span class="org-variable-name">add control</span> = Control_L
+<span class="org-variable-name">add Lock</span> = Control_R
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org411c34c" class="outline-2">
-<h2 id="org411c34c">Xmonad</h2>
-<div class="outline-text-2" id="text-org411c34c">
+<div id="outline-container-org4fe9173" class="outline-2">
+<h2 id="org4fe9173">Xmonad</h2>
+<div class="outline-text-2" id="text-org4fe9173">
 </div>
-<div id="outline-container-org24059cf" class="outline-3">
-<h3 id="org24059cf">Imports</h3>
-<div class="outline-text-3" id="text-org24059cf">
+<div id="outline-container-orge070903" class="outline-3">
+<h3 id="orge070903">Imports</h3>
+<div class="outline-text-3" id="text-orge070903">
 <div class="org-src-container">
-<pre class="src src-haskell"><span style="font-weight: bold;">import</span> <span style="font-weight: bold; text-decoration: underline;">XMonad</span>
-<span style="font-weight: bold;">import</span> <span style="font-weight: bold; text-decoration: underline;">Data.Maybe</span> (isJust)
-<span style="font-weight: bold;">import</span> <span style="font-weight: bold; text-decoration: underline;">Data.Monoid</span>
-<span style="font-weight: bold;">import</span> <span style="font-weight: bold; text-decoration: underline;">System.Exit</span>
-<span style="font-weight: bold;">import</span> <span style="font-weight: bold; text-decoration: underline;">XMonad.Actions.CycleWS</span> (<span style="font-weight: bold; text-decoration: underline;">Direction1D</span>(<span style="font-weight: bold; font-style: italic;">..</span>), moveTo, shiftTo, <span style="font-weight: bold; text-decoration: underline;">WSType</span>(<span style="font-weight: bold; font-style: italic;">..</span>), nextScreen, prevScreen)
-<span style="font-weight: bold;">import</span> <span style="font-weight: bold; text-decoration: underline;">XMonad.Actions.WithAll</span> (sinkAll, killAll)
-<span style="font-weight: bold;">import</span> <span style="font-weight: bold; text-decoration: underline;">XMonad.Hooks.ManageDocks</span>
-<span style="font-weight: bold;">import</span> <span style="font-weight: bold; text-decoration: underline;">XMonad.Hooks.DynamicLog</span> (dynamicLogWithPP, wrap, xmobarPP, xmobarColor, shorten, <span style="font-weight: bold; text-decoration: underline;">PP</span>(<span style="font-weight: bold; font-style: italic;">..</span>))
-<span style="font-weight: bold;">import</span> <span style="font-weight: bold; text-decoration: underline;">XMonad.Layout.Spacing</span>
-<span style="font-weight: bold;">import</span> <span style="font-weight: bold; text-decoration: underline;">XMonad.Layout.ThreeColumns</span>
-<span style="font-weight: bold;">import</span> <span style="font-weight: bold; text-decoration: underline;">XMonad.Layout.MultiToggle</span> (mkToggle, single, <span style="font-weight: bold; text-decoration: underline;">EOT</span>(<span style="font-weight: bold; text-decoration: underline;">EOT</span>), (<span style="font-weight: bold; font-style: italic;">??</span>))
-<span style="font-weight: bold;">import</span> <span style="font-weight: bold; text-decoration: underline;">XMonad.Layout.MultiToggle.Instances</span> (<span style="font-weight: bold; text-decoration: underline;">StdTransformers</span>(<span style="font-weight: bold; text-decoration: underline;">NBFULL</span>, <span style="font-weight: bold; text-decoration: underline;">MIRROR</span>, <span style="font-weight: bold; text-decoration: underline;">NOBORDERS</span>))
-<span style="font-weight: bold;">import</span> <span style="font-weight: bold; text-decoration: underline;">XMonad.Util.SpawnOnce</span>
-<span style="font-weight: bold;">import</span> <span style="font-weight: bold; text-decoration: underline;">XMonad.Util.Run</span>
-<span style="font-weight: bold;">import</span> <span style="font-weight: bold; text-decoration: underline;">XMonad.Util.EZConfig</span> (additionalKeysP)
-<span style="font-weight: bold;">import</span> <span style="font-weight: bold; text-decoration: underline;">Graphics.X11.ExtraTypes.XF86</span>
+<pre class="src src-haskell"><span class="org-haskell-keyword">import</span> <span class="org-haskell-constructor">XMonad</span>
+<span class="org-haskell-keyword">import</span> <span class="org-haskell-constructor">Data.Maybe</span> (isJust)
+<span class="org-haskell-keyword">import</span> <span class="org-haskell-constructor">Data.Monoid</span>
+<span class="org-haskell-keyword">import</span> <span class="org-haskell-constructor">System.Exit</span>
+<span class="org-haskell-keyword">import</span> <span class="org-haskell-constructor">XMonad.Actions.CycleWS</span> (<span class="org-haskell-constructor">Direction1D</span>(<span class="org-haskell-operator">..</span>), moveTo, shiftTo, <span class="org-haskell-constructor">WSType</span>(<span class="org-haskell-operator">..</span>), nextScreen, prevScreen)
+<span class="org-haskell-keyword">import</span> <span class="org-haskell-constructor">XMonad.Actions.WithAll</span> (sinkAll, killAll)
+<span class="org-haskell-keyword">import</span> <span class="org-haskell-constructor">XMonad.Hooks.ManageDocks</span>
+<span class="org-haskell-keyword">import</span> <span class="org-haskell-constructor">XMonad.Hooks.DynamicLog</span> (dynamicLogWithPP, wrap, xmobarPP, xmobarColor, shorten, <span class="org-haskell-constructor">PP</span>(<span class="org-haskell-operator">..</span>))
+<span class="org-haskell-keyword">import</span> <span class="org-haskell-constructor">XMonad.Layout.Spacing</span>
+<span class="org-haskell-keyword">import</span> <span class="org-haskell-constructor">XMonad.Layout.ThreeColumns</span>
+<span class="org-haskell-keyword">import</span> <span class="org-haskell-constructor">XMonad.Layout.MultiToggle</span> (mkToggle, single, <span class="org-haskell-constructor">EOT</span>(<span class="org-haskell-constructor">EOT</span>), (<span class="org-haskell-operator">??</span>))
+<span class="org-haskell-keyword">import</span> <span class="org-haskell-constructor">XMonad.Layout.MultiToggle.Instances</span> (<span class="org-haskell-constructor">StdTransformers</span>(<span class="org-haskell-constructor">NBFULL</span>, <span class="org-haskell-constructor">MIRROR</span>, <span class="org-haskell-constructor">NOBORDERS</span>))
+<span class="org-haskell-keyword">import</span> <span class="org-haskell-constructor">XMonad.Util.SpawnOnce</span>
+<span class="org-haskell-keyword">import</span> <span class="org-haskell-constructor">XMonad.Util.Run</span>
+<span class="org-haskell-keyword">import</span> <span class="org-haskell-constructor">XMonad.Util.EZConfig</span> (additionalKeysP)
+<span class="org-haskell-keyword">import</span> <span class="org-haskell-constructor">Graphics.X11.ExtraTypes.XF86</span>
 
-<span style="font-weight: bold;">import</span> <span style="font-weight: bold;">qualified</span> <span style="font-weight: bold; text-decoration: underline;">XMonad.StackSet</span> <span style="font-weight: bold;">as</span> <span style="font-weight: bold; text-decoration: underline;">W</span>
-<span style="font-weight: bold;">import</span> <span style="font-weight: bold;">qualified</span> <span style="font-weight: bold; text-decoration: underline;">Data.Map</span>        <span style="font-weight: bold;">as</span> <span style="font-weight: bold; text-decoration: underline;">M</span>
-<span style="font-weight: bold;">import</span> <span style="font-weight: bold;">qualified</span> <span style="font-weight: bold; text-decoration: underline;">XMonad.Layout.MultiToggle</span> <span style="font-weight: bold;">as</span> <span style="font-weight: bold; text-decoration: underline;">MT</span> (<span style="font-weight: bold; text-decoration: underline;">Toggle</span>(<span style="font-weight: bold; font-style: italic;">..</span>))
+<span class="org-haskell-keyword">import</span> <span class="org-haskell-keyword">qualified</span> <span class="org-haskell-constructor">XMonad.StackSet</span> <span class="org-haskell-keyword">as</span> <span class="org-haskell-constructor">W</span>
+<span class="org-haskell-keyword">import</span> <span class="org-haskell-keyword">qualified</span> <span class="org-haskell-constructor">Data.Map</span>        <span class="org-haskell-keyword">as</span> <span class="org-haskell-constructor">M</span>
+<span class="org-haskell-keyword">import</span> <span class="org-haskell-keyword">qualified</span> <span class="org-haskell-constructor">XMonad.Layout.MultiToggle</span> <span class="org-haskell-keyword">as</span> <span class="org-haskell-constructor">MT</span> (<span class="org-haskell-constructor">Toggle</span>(<span class="org-haskell-operator">..</span>))
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org475576b" class="outline-3">
-<h3 id="org475576b">Variables</h3>
-<div class="outline-text-3" id="text-org475576b">
+<div id="outline-container-orgfcef606" class="outline-3">
+<h3 id="orgfcef606">Variables</h3>
+<div class="outline-text-3" id="text-orgfcef606">
 <div class="org-src-container">
-<pre class="src src-haskell"><span style="font-weight: bold;">myTerminal</span>      <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-style: italic;">"alacritty"</span>
+<pre class="src src-haskell"><span class="org-haskell-definition">myTerminal</span>      <span class="org-haskell-operator">=</span> <span class="org-string">"alacritty"</span>
 
-<span style="font-weight: bold;">myEmacs</span> <span style="font-weight: bold; font-style: italic;">::</span> <span style="font-weight: bold; text-decoration: underline;">String</span>
-<span style="font-weight: bold;">myEmacs</span> <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-style: italic;">"emacsclient -c -a 'emacs' "</span>  <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">Makes emacs keybindings easier to type</span>
+<span class="org-haskell-definition">myEmacs</span> <span class="org-haskell-operator">::</span> <span class="org-haskell-type">String</span>
+<span class="org-haskell-definition">myEmacs</span> <span class="org-haskell-operator">=</span> <span class="org-string">"emacsclient -c -a 'emacs' "</span>  <span class="org-comment-delimiter">-- </span><span class="org-comment">Makes emacs keybindings easier to type</span>
 
-<span style="font-weight: bold;">myBrowser</span> <span style="font-weight: bold; font-style: italic;">::</span> <span style="font-weight: bold; text-decoration: underline;">String</span>
-<span style="font-weight: bold;">myBrowser</span> <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-style: italic;">"firefox"</span>
+<span class="org-haskell-definition">myBrowser</span> <span class="org-haskell-operator">::</span> <span class="org-haskell-type">String</span>
+<span class="org-haskell-definition">myBrowser</span> <span class="org-haskell-operator">=</span> <span class="org-string">"firefox"</span>
 
-<span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">Whether focus follows the mouse pointer.</span>
-<span style="font-weight: bold;">myFocusFollowsMouse</span> <span style="font-weight: bold; font-style: italic;">::</span> <span style="font-weight: bold; text-decoration: underline;">Bool</span>
-<span style="font-weight: bold;">myFocusFollowsMouse</span> <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-weight: bold; text-decoration: underline;">True</span>
+<span class="org-comment-delimiter">-- </span><span class="org-comment">Whether focus follows the mouse pointer.</span>
+<span class="org-haskell-definition">myFocusFollowsMouse</span> <span class="org-haskell-operator">::</span> <span class="org-haskell-type">Bool</span>
+<span class="org-haskell-definition">myFocusFollowsMouse</span> <span class="org-haskell-operator">=</span> <span class="org-haskell-constructor">True</span>
 
-<span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">Whether clicking on a window to focus also passes the click to the window</span>
-<span style="font-weight: bold;">myClickJustFocuses</span> <span style="font-weight: bold; font-style: italic;">::</span> <span style="font-weight: bold; text-decoration: underline;">Bool</span>
-<span style="font-weight: bold;">myClickJustFocuses</span> <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-weight: bold; text-decoration: underline;">False</span>
+<span class="org-comment-delimiter">-- </span><span class="org-comment">Whether clicking on a window to focus also passes the click to the window</span>
+<span class="org-haskell-definition">myClickJustFocuses</span> <span class="org-haskell-operator">::</span> <span class="org-haskell-type">Bool</span>
+<span class="org-haskell-definition">myClickJustFocuses</span> <span class="org-haskell-operator">=</span> <span class="org-haskell-constructor">False</span>
 
-<span style="font-weight: bold;">color01</span> <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-style: italic;">"#9567e0"</span>
-<span style="font-weight: bold;">color02</span> <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-style: italic;">"#51afef"</span>
-<span style="font-weight: bold;">color03</span> <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-style: italic;">"#ecbe7b"</span>
+<span class="org-haskell-definition">color01</span> <span class="org-haskell-operator">=</span> <span class="org-string">"#9567e0"</span>
+<span class="org-haskell-definition">color02</span> <span class="org-haskell-operator">=</span> <span class="org-string">"#51afef"</span>
+<span class="org-haskell-definition">color03</span> <span class="org-haskell-operator">=</span> <span class="org-string">"#ecbe7b"</span>
 
-<span style="font-weight: bold;">windowCount</span> <span style="font-weight: bold; font-style: italic;">::</span> <span style="font-weight: bold; text-decoration: underline;">X</span> (<span style="font-weight: bold; text-decoration: underline;">Maybe</span> <span style="font-weight: bold; text-decoration: underline;">String</span>)
-<span style="font-weight: bold;">windowCount</span> <span style="font-weight: bold; font-style: italic;">=</span> gets <span style="font-weight: bold; font-style: italic;">$</span> <span style="font-weight: bold; text-decoration: underline;">Just</span> <span style="font-weight: bold; font-style: italic;">.</span> show <span style="font-weight: bold; font-style: italic;">.</span> length <span style="font-weight: bold; font-style: italic;">.</span> W.integrate' <span style="font-weight: bold; font-style: italic;">.</span> W.stack <span style="font-weight: bold; font-style: italic;">.</span> W.workspace <span style="font-weight: bold; font-style: italic;">.</span> W.current <span style="font-weight: bold; font-style: italic;">.</span> windowset
+<span class="org-haskell-definition">windowCount</span> <span class="org-haskell-operator">::</span> <span class="org-haskell-type">X</span> (<span class="org-haskell-type">Maybe</span> <span class="org-haskell-type">String</span>)
+<span class="org-haskell-definition">windowCount</span> <span class="org-haskell-operator">=</span> gets <span class="org-haskell-operator">$</span> <span class="org-haskell-constructor">Just</span> <span class="org-haskell-operator">.</span> show <span class="org-haskell-operator">.</span> length <span class="org-haskell-operator">.</span> W.integrate' <span class="org-haskell-operator">.</span> W.stack <span class="org-haskell-operator">.</span> W.workspace <span class="org-haskell-operator">.</span> W.current <span class="org-haskell-operator">.</span> windowset
 
-<span style="font-weight: bold;">myBorderWidth</span>   <span style="font-weight: bold; font-style: italic;">=</span> 4
+<span class="org-haskell-definition">myBorderWidth</span>   <span class="org-haskell-operator">=</span> 4
 
-<span style="font-weight: bold;">myModMask</span>       <span style="font-weight: bold; font-style: italic;">=</span> mod4Mask
+<span class="org-haskell-definition">myModMask</span>       <span class="org-haskell-operator">=</span> mod4Mask
 
-<span style="font-weight: bold;">myWorkspaces</span>    <span style="font-weight: bold; font-style: italic;">=</span> [<span style="font-style: italic;">"1:chat"</span>,<span style="font-style: italic;">"2:emacs"</span>,<span style="font-style: italic;">"3:term"</span>,<span style="font-style: italic;">"4:web"</span>,<span style="font-style: italic;">"5:other"</span>]
+<span class="org-haskell-definition">myWorkspaces</span>    <span class="org-haskell-operator">=</span> [<span class="org-string">"1:chat"</span>,<span class="org-string">"2:emacs"</span>,<span class="org-string">"3:term"</span>,<span class="org-string">"4:web"</span>,<span class="org-string">"5:other"</span>]
 
-<span style="font-weight: bold;">myNormalBorderColor</span>  <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-style: italic;">"#dddddd"</span>
-<span style="font-weight: bold;">myFocusedBorderColor</span> <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-style: italic;">"#9567e0"</span>
+<span class="org-haskell-definition">myNormalBorderColor</span>  <span class="org-haskell-operator">=</span> <span class="org-string">"#dddddd"</span>
+<span class="org-haskell-definition">myFocusedBorderColor</span> <span class="org-haskell-operator">=</span> <span class="org-string">"#9567e0"</span>
 
-<span style="font-weight: bold;">menuBackgroundColor</span> <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-style: italic;">"#282a36"</span>
-<span style="font-weight: bold;">menuForegroundColor</span> <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-style: italic;">"#eff0eb"</span>
-<span style="font-weight: bold;">menuFontFamily</span> <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-style: italic;">"Iosevka Aile"</span>
-<span style="font-weight: bold;">menuArguments</span> <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-style: italic;">" -l 5 -fn '"</span> <span style="font-weight: bold; font-style: italic;">++</span> menuFontFamily <span style="font-weight: bold; font-style: italic;">++</span> <span style="font-style: italic;">"' -nb '"</span> <span style="font-weight: bold; font-style: italic;">++</span> menuBackgroundColor <span style="font-weight: bold; font-style: italic;">++</span> <span style="font-style: italic;">"' -nf '"</span> <span style="font-weight: bold; font-style: italic;">++</span> menuForegroundColor <span style="font-weight: bold; font-style: italic;">++</span> <span style="font-style: italic;">"' -bw 4"</span>
+<span class="org-haskell-definition">menuBackgroundColor</span> <span class="org-haskell-operator">=</span> <span class="org-string">"#282a36"</span>
+<span class="org-haskell-definition">menuForegroundColor</span> <span class="org-haskell-operator">=</span> <span class="org-string">"#eff0eb"</span>
+<span class="org-haskell-definition">menuFontFamily</span> <span class="org-haskell-operator">=</span> <span class="org-string">"Iosevka Aile"</span>
+<span class="org-haskell-definition">menuArguments</span> <span class="org-haskell-operator">=</span> <span class="org-string">" -l 5 -fn '"</span> <span class="org-haskell-operator">++</span> menuFontFamily <span class="org-haskell-operator">++</span> <span class="org-string">"' -nb '"</span> <span class="org-haskell-operator">++</span> menuBackgroundColor <span class="org-haskell-operator">++</span> <span class="org-string">"' -nf '"</span> <span class="org-haskell-operator">++</span> menuForegroundColor <span class="org-haskell-operator">++</span> <span class="org-string">"' -bw 4"</span>
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org8d5b462" class="outline-3">
-<h3 id="org8d5b462">Key Bindings</h3>
-<div class="outline-text-3" id="text-org8d5b462">
+<div id="outline-container-org8064f26" class="outline-3">
+<h3 id="org8064f26">Key Bindings</h3>
+<div class="outline-text-3" id="text-org8064f26">
 <div class="org-src-container">
-<pre class="src src-haskell"><span style="font-weight: bold;">myKeys</span> <span style="font-weight: bold; font-style: italic;">::</span> [(<span style="font-weight: bold; text-decoration: underline;">String</span>, <span style="font-weight: bold; text-decoration: underline;">X</span> <span style="font-weight: bold; text-decoration: underline;">()</span>)]
-<span style="font-weight: bold;">myKeys</span> <span style="font-weight: bold; font-style: italic;">=</span>
-  <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">launch a terminal</span>
-    [ (<span style="font-style: italic;">"M-&lt;Return&gt;"</span>, spawn (myTerminal))
+<pre class="src src-haskell"><span class="org-haskell-definition">myKeys</span> <span class="org-haskell-operator">::</span> [(<span class="org-haskell-type">String</span>, <span class="org-haskell-type">X</span> <span class="org-haskell-constructor">()</span>)]
+<span class="org-haskell-definition">myKeys</span> <span class="org-haskell-operator">=</span>
+  <span class="org-comment-delimiter">-- </span><span class="org-comment">launch a terminal</span>
+    [ (<span class="org-string">"M-&lt;Return&gt;"</span>, spawn (myTerminal))
 
-    <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">launch dmenu</span>
-    , (<span style="font-style: italic;">"M-p"</span>, spawn (<span style="font-style: italic;">"dmenu_run"</span> <span style="font-weight: bold; font-style: italic;">++</span> menuArguments))
+    <span class="org-comment-delimiter">-- </span><span class="org-comment">launch dmenu</span>
+    , (<span class="org-string">"M-p"</span>, spawn (<span class="org-string">"dmenu_run"</span> <span class="org-haskell-operator">++</span> menuArguments))
 
-    <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">launch clipmenu</span>
-    , (<span style="font-style: italic;">"M-u"</span>, spawn (<span style="font-style: italic;">"clipmenu"</span> <span style="font-weight: bold; font-style: italic;">++</span> menuArguments))
+    <span class="org-comment-delimiter">-- </span><span class="org-comment">launch clipmenu</span>
+    , (<span class="org-string">"M-u"</span>, spawn (<span class="org-string">"clipmenu"</span> <span class="org-haskell-operator">++</span> menuArguments))
 
-      <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">launch passmenu</span>
-    , (<span style="font-style: italic;">"M-i"</span>, spawn (<span style="font-style: italic;">"passmenu"</span> <span style="font-weight: bold; font-style: italic;">++</span> menuArguments))
+      <span class="org-comment-delimiter">-- </span><span class="org-comment">launch passmenu</span>
+    , (<span class="org-string">"M-i"</span>, spawn (<span class="org-string">"passmenu"</span> <span class="org-haskell-operator">++</span> menuArguments))
 
-      <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">close focused window</span>
-    , (<span style="font-style: italic;">"M-c"</span>, kill)
-    , (<span style="font-style: italic;">"M-S-c"</span>, killAll)
+      <span class="org-comment-delimiter">-- </span><span class="org-comment">close focused window</span>
+    , (<span class="org-string">"M-c"</span>, kill)
+    , (<span class="org-string">"M-S-c"</span>, killAll)
 
-    , (<span style="font-style: italic;">"M-S-q"</span>, io (exitWith <span style="font-weight: bold; text-decoration: underline;">ExitSuccess</span>))
-    , (<span style="font-style: italic;">"M-q"</span>, spawn <span style="font-style: italic;">"xmonad --recompile; xmonad --restart"</span>)
+    , (<span class="org-string">"M-S-q"</span>, io (exitWith <span class="org-haskell-constructor">ExitSuccess</span>))
+    , (<span class="org-string">"M-q"</span>, spawn <span class="org-string">"xmonad --recompile; xmonad --restart"</span>)
 
-      <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">Emacs keybindings</span>
-    , (<span style="font-style: italic;">"M-&lt;Backspace&gt;"</span>, spawn (myEmacs))
-    , (<span style="font-style: italic;">"M-S-&lt;Backspace&gt; b"</span>, spawn (myEmacs <span style="font-weight: bold; font-style: italic;">++</span> (<span style="font-style: italic;">"--eval '(ibuffer)'"</span>)))
-    , (<span style="font-style: italic;">"M-S-&lt;Backspace&gt; d"</span>, spawn (myEmacs <span style="font-weight: bold; font-style: italic;">++</span> (<span style="font-style: italic;">"--eval '(dired nil)'"</span>)))
-    , (<span style="font-style: italic;">"M-S-&lt;Backspace&gt; e"</span>, spawn (myEmacs <span style="font-weight: bold; font-style: italic;">++</span> (<span style="font-style: italic;">"--eval '(ig/open-emacs-configuration)'"</span>)))
-    , (<span style="font-style: italic;">"M-S-&lt;Backspace&gt; a"</span>, spawn (myEmacs <span style="font-weight: bold; font-style: italic;">++</span> (<span style="font-style: italic;">"--eval '(ig/open-dotfiles-configuration)'"</span>)))
+      <span class="org-comment-delimiter">-- </span><span class="org-comment">Emacs keybindings</span>
+    , (<span class="org-string">"M-&lt;Backspace&gt;"</span>, spawn (myEmacs))
+    , (<span class="org-string">"M-S-&lt;Backspace&gt; b"</span>, spawn (myEmacs <span class="org-haskell-operator">++</span> (<span class="org-string">"--eval '(ibuffer)'"</span>)))
+    , (<span class="org-string">"M-S-&lt;Backspace&gt; d"</span>, spawn (myEmacs <span class="org-haskell-operator">++</span> (<span class="org-string">"--eval '(dired nil)'"</span>)))
+    , (<span class="org-string">"M-S-&lt;Backspace&gt; e"</span>, spawn (myEmacs <span class="org-haskell-operator">++</span> (<span class="org-string">"--eval '(ig/open-emacs-configuration)'"</span>)))
+    , (<span class="org-string">"M-S-&lt;Backspace&gt; a"</span>, spawn (myEmacs <span class="org-haskell-operator">++</span> (<span class="org-string">"--eval '(ig/open-dotfiles-configuration)'"</span>)))
 
-      <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">launch browser</span>
-    , (<span style="font-style: italic;">"M-b"</span>, spawn (myBrowser))
+      <span class="org-comment-delimiter">-- </span><span class="org-comment">launch browser</span>
+    , (<span class="org-string">"M-b"</span>, spawn (myBrowser))
 
-      <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">Rotate through the available layout algorithms</span>
-    , (<span style="font-style: italic;">"M-&lt;Space&gt;"</span>, sendMessage <span style="font-weight: bold; text-decoration: underline;">NextLayout</span>)
-    , (<span style="font-style: italic;">"M-&lt;Tab&gt;"</span>, sendMessage (<span style="font-weight: bold; text-decoration: underline;">MT.Toggle</span> <span style="font-weight: bold; text-decoration: underline;">NBFULL</span>) <span style="font-weight: bold; font-style: italic;">&gt;&gt;</span> sendMessage <span style="font-weight: bold; text-decoration: underline;">ToggleStruts</span> <span style="font-weight: bold; font-style: italic;">&gt;&gt;</span> toggleSmartSpacing)
+      <span class="org-comment-delimiter">-- </span><span class="org-comment">Rotate through the available layout algorithms</span>
+    , (<span class="org-string">"M-&lt;Space&gt;"</span>, sendMessage <span class="org-haskell-constructor">NextLayout</span>)
+    , (<span class="org-string">"M-&lt;Tab&gt;"</span>, sendMessage (<span class="org-haskell-constructor">MT.Toggle</span> <span class="org-haskell-constructor">NBFULL</span>) <span class="org-haskell-operator">&gt;&gt;</span> sendMessage <span class="org-haskell-constructor">ToggleStruts</span> <span class="org-haskell-operator">&gt;&gt;</span> toggleSmartSpacing)
 
-      <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">Window navigation</span>
-    , (<span style="font-style: italic;">"M-m"</span>, windows W.focusMaster)
-    , (<span style="font-style: italic;">"M-j"</span>, windows W.focusDown)
-    , (<span style="font-style: italic;">"M-k"</span>, windows W.focusUp)
-    , (<span style="font-style: italic;">"M-S-m"</span>, windows W.swapMaster)
-    , (<span style="font-style: italic;">"M-S-j"</span>, windows W.swapDown)
-    , (<span style="font-style: italic;">"M-S-k"</span>, windows W.swapUp)
+      <span class="org-comment-delimiter">-- </span><span class="org-comment">Window navigation</span>
+    , (<span class="org-string">"M-m"</span>, windows W.focusMaster)
+    , (<span class="org-string">"M-j"</span>, windows W.focusDown)
+    , (<span class="org-string">"M-k"</span>, windows W.focusUp)
+    , (<span class="org-string">"M-S-m"</span>, windows W.swapMaster)
+    , (<span class="org-string">"M-S-j"</span>, windows W.swapDown)
+    , (<span class="org-string">"M-S-k"</span>, windows W.swapUp)
 
-      <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">Floating windows</span>
-    , (<span style="font-style: italic;">"M-t"</span>, withFocused <span style="font-weight: bold; font-style: italic;">$</span> windows <span style="font-weight: bold; font-style: italic;">.</span> W.sink)
-    , (<span style="font-style: italic;">"M-S-t"</span>, sinkAll)
+      <span class="org-comment-delimiter">-- </span><span class="org-comment">Floating windows</span>
+    , (<span class="org-string">"M-t"</span>, withFocused <span class="org-haskell-operator">$</span> windows <span class="org-haskell-operator">.</span> W.sink)
+    , (<span class="org-string">"M-S-t"</span>, sinkAll)
 
-      <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">Window resizing</span>
-    , (<span style="font-style: italic;">"M-h"</span>, sendMessage <span style="font-weight: bold; text-decoration: underline;">Shrink</span>)
-    , (<span style="font-style: italic;">"M-l"</span>, sendMessage <span style="font-weight: bold; text-decoration: underline;">Expand</span>)
+      <span class="org-comment-delimiter">-- </span><span class="org-comment">Window resizing</span>
+    , (<span class="org-string">"M-h"</span>, sendMessage <span class="org-haskell-constructor">Shrink</span>)
+    , (<span class="org-string">"M-l"</span>, sendMessage <span class="org-haskell-constructor">Expand</span>)
 
-    <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">KB_GROUP Workspaces</span>
-    , (<span style="font-style: italic;">"M-."</span>, nextScreen)
-    , (<span style="font-style: italic;">"M-,"</span>, prevScreen)
-    , (<span style="font-style: italic;">"M-S-."</span>, shiftTo <span style="font-weight: bold; text-decoration: underline;">Next</span> nonNSP <span style="font-weight: bold; font-style: italic;">&gt;&gt;</span> moveTo <span style="font-weight: bold; text-decoration: underline;">Next</span> nonNSP)
-    , (<span style="font-style: italic;">"M-S-,"</span>, shiftTo <span style="font-weight: bold; text-decoration: underline;">Prev</span> nonNSP <span style="font-weight: bold; font-style: italic;">&gt;&gt;</span> moveTo <span style="font-weight: bold; text-decoration: underline;">Prev</span> nonNSP)
+    <span class="org-comment-delimiter">-- </span><span class="org-comment">KB_GROUP Workspaces</span>
+    , (<span class="org-string">"M-."</span>, nextScreen)
+    , (<span class="org-string">"M-,"</span>, prevScreen)
+    , (<span class="org-string">"M-S-."</span>, shiftTo <span class="org-haskell-constructor">Next</span> nonNSP <span class="org-haskell-operator">&gt;&gt;</span> moveTo <span class="org-haskell-constructor">Next</span> nonNSP)
+    , (<span class="org-string">"M-S-,"</span>, shiftTo <span class="org-haskell-constructor">Prev</span> nonNSP <span class="org-haskell-operator">&gt;&gt;</span> moveTo <span class="org-haskell-constructor">Prev</span> nonNSP)
 
-      <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">control audio</span>
-    , (<span style="font-style: italic;">"&lt;XF86AudioLowerVolume&gt;"</span>, spawn <span style="font-style: italic;">"pactl set-sink-volume 0 -1.5%"</span>)
-    , (<span style="font-style: italic;">"&lt;XF86AudioRaiseVolume&gt;"</span>, spawn <span style="font-style: italic;">"pactl set-sink-volume 0 +1.5%"</span>)
-    , (<span style="font-style: italic;">"&lt;XF86AudioMute&gt;"</span>, spawn <span style="font-style: italic;">"pactl set-sink-mute 0 toggle"</span>)
+      <span class="org-comment-delimiter">-- </span><span class="org-comment">control audio</span>
+    , (<span class="org-string">"&lt;XF86AudioLowerVolume&gt;"</span>, spawn <span class="org-string">"pactl set-sink-volume 0 -1.5%"</span>)
+    , (<span class="org-string">"&lt;XF86AudioRaiseVolume&gt;"</span>, spawn <span class="org-string">"pactl set-sink-volume 0 +1.5%"</span>)
+    , (<span class="org-string">"&lt;XF86AudioMute&gt;"</span>, spawn <span class="org-string">"pactl set-sink-mute 0 toggle"</span>)
 
-      <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">control brightness</span>
-    , (<span style="font-style: italic;">"&lt;XF86MonBrightnessUp&gt;"</span>, spawn <span style="font-style: italic;">"sudo xbacklight -inc 10"</span>)
-    , (<span style="font-style: italic;">"&lt;XF86MonBrightnessDown&gt;"</span>, spawn <span style="font-style: italic;">"sudo xbacklight -dec 10"</span>)
+      <span class="org-comment-delimiter">-- </span><span class="org-comment">control brightness</span>
+    , (<span class="org-string">"&lt;XF86MonBrightnessUp&gt;"</span>, spawn <span class="org-string">"sudo xbacklight -inc 10"</span>)
+    , (<span class="org-string">"&lt;XF86MonBrightnessDown&gt;"</span>, spawn <span class="org-string">"sudo xbacklight -dec 10"</span>)
     ]
 
-    <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">The following lines are needed for named scratchpads.</span>
-  <span style="font-weight: bold;">where</span> nonNSP          <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-weight: bold; text-decoration: underline;">WSIs</span> (return (<span style="font-weight: bold; font-style: italic;">\</span>ws <span style="font-weight: bold; font-style: italic;">-&gt;</span> W.tag ws <span style="font-weight: bold; font-style: italic;">/=</span> <span style="font-style: italic;">"NSP"</span>))
-        nonEmptyNonNSP  <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-weight: bold; text-decoration: underline;">WSIs</span> (return (<span style="font-weight: bold; font-style: italic;">\</span>ws <span style="font-weight: bold; font-style: italic;">-&gt;</span> isJust (W.stack ws) <span style="font-weight: bold; font-style: italic;">&amp;&amp;</span> W.tag ws <span style="font-weight: bold; font-style: italic;">/=</span> <span style="font-style: italic;">"NSP"</span>))
+    <span class="org-comment-delimiter">-- </span><span class="org-comment">The following lines are needed for named scratchpads.</span>
+  <span class="org-haskell-keyword">where</span> nonNSP          <span class="org-haskell-operator">=</span> <span class="org-haskell-constructor">WSIs</span> (return (<span class="org-haskell-operator">\</span>ws <span class="org-haskell-operator">-&gt;</span> W.tag ws <span class="org-haskell-operator">/=</span> <span class="org-string">"NSP"</span>))
+        nonEmptyNonNSP  <span class="org-haskell-operator">=</span> <span class="org-haskell-constructor">WSIs</span> (return (<span class="org-haskell-operator">\</span>ws <span class="org-haskell-operator">-&gt;</span> isJust (W.stack ws) <span class="org-haskell-operator">&amp;&amp;</span> W.tag ws <span class="org-haskell-operator">/=</span> <span class="org-string">"NSP"</span>))
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org767a063" class="outline-3">
-<h3 id="org767a063">Mouse Bindings</h3>
-<div class="outline-text-3" id="text-org767a063">
+<div id="outline-container-orgd124442" class="outline-3">
+<h3 id="orgd124442">Mouse Bindings</h3>
+<div class="outline-text-3" id="text-orgd124442">
 <div class="org-src-container">
-<pre class="src src-haskell"><span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">Mouse bindings</span>
-<span style="font-weight: bold;">myMouseBindings</span> (<span style="font-weight: bold; text-decoration: underline;">XConfig</span> {XMonad.modMask <span style="font-weight: bold; font-style: italic;">=</span> modm}) <span style="font-weight: bold; font-style: italic;">=</span> M.fromList <span style="font-weight: bold; font-style: italic;">$</span>
+<pre class="src src-haskell"><span class="org-comment-delimiter">-- </span><span class="org-comment">Mouse bindings</span>
+<span class="org-haskell-definition">myMouseBindings</span> (<span class="org-haskell-constructor">XConfig</span> {XMonad.modMask <span class="org-haskell-operator">=</span> modm}) <span class="org-haskell-operator">=</span> M.fromList <span class="org-haskell-operator">$</span>
 
-    <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">mod-button1, Set the window to floating mode and move by dragging</span>
-    [ ((modm, button1), (<span style="font-weight: bold; font-style: italic;">\</span>w <span style="font-weight: bold; font-style: italic;">-&gt;</span> focus w <span style="font-weight: bold; font-style: italic;">&gt;&gt;</span> mouseMoveWindow w
-                                       <span style="font-weight: bold; font-style: italic;">&gt;&gt;</span> windows W.shiftMaster))
+    <span class="org-comment-delimiter">-- </span><span class="org-comment">mod-button1, Set the window to floating mode and move by dragging</span>
+    [ ((modm, button1), (<span class="org-haskell-operator">\</span>w <span class="org-haskell-operator">-&gt;</span> focus w <span class="org-haskell-operator">&gt;&gt;</span> mouseMoveWindow w
+                                       <span class="org-haskell-operator">&gt;&gt;</span> windows W.shiftMaster))
 
-    <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">mod-button2, Raise the window to the top of the stack</span>
-    , ((modm, button2), (<span style="font-weight: bold; font-style: italic;">\</span>w <span style="font-weight: bold; font-style: italic;">-&gt;</span> focus w <span style="font-weight: bold; font-style: italic;">&gt;&gt;</span> windows W.shiftMaster))
+    <span class="org-comment-delimiter">-- </span><span class="org-comment">mod-button2, Raise the window to the top of the stack</span>
+    , ((modm, button2), (<span class="org-haskell-operator">\</span>w <span class="org-haskell-operator">-&gt;</span> focus w <span class="org-haskell-operator">&gt;&gt;</span> windows W.shiftMaster))
 
-    <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">mod-button3, Set the window to floating mode and resize by dragging</span>
-    , ((modm, button3), (<span style="font-weight: bold; font-style: italic;">\</span>w <span style="font-weight: bold; font-style: italic;">-&gt;</span> focus w <span style="font-weight: bold; font-style: italic;">&gt;&gt;</span> mouseResizeWindow w
-                                       <span style="font-weight: bold; font-style: italic;">&gt;&gt;</span> windows W.shiftMaster))
+    <span class="org-comment-delimiter">-- </span><span class="org-comment">mod-button3, Set the window to floating mode and resize by dragging</span>
+    , ((modm, button3), (<span class="org-haskell-operator">\</span>w <span class="org-haskell-operator">-&gt;</span> focus w <span class="org-haskell-operator">&gt;&gt;</span> mouseResizeWindow w
+                                       <span class="org-haskell-operator">&gt;&gt;</span> windows W.shiftMaster))
 
-    <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">you may also bind events to the mouse scroll wheel (button4 and button5)</span>
+    <span class="org-comment-delimiter">-- </span><span class="org-comment">you may also bind events to the mouse scroll wheel (button4 and button5)</span>
     ]
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org9dad5b3" class="outline-3">
-<h3 id="org9dad5b3">Layout</h3>
-<div class="outline-text-3" id="text-org9dad5b3">
+<div id="outline-container-org4f8f639" class="outline-3">
+<h3 id="org4f8f639">Layout</h3>
+<div class="outline-text-3" id="text-org4f8f639">
 <div class="org-src-container">
-<pre class="src src-haskell"><span style="font-weight: bold;">myLayout</span> <span style="font-weight: bold; font-style: italic;">=</span> avoidStruts
-           <span style="font-weight: bold; font-style: italic;">$</span> mkToggle (<span style="font-weight: bold; text-decoration: underline;">NBFULL</span> <span style="font-weight: bold; font-style: italic;">??</span> <span style="font-weight: bold; text-decoration: underline;">NOBORDERS</span> <span style="font-weight: bold; font-style: italic;">??</span> <span style="font-weight: bold; text-decoration: underline;">EOT</span>) myDefaultLayout
-  <span style="font-weight: bold;">where</span>
-    myDefaultLayout <span style="font-weight: bold; font-style: italic;">=</span> (tiled <span style="font-weight: bold; font-style: italic;">|||</span> <span style="font-weight: bold; text-decoration: underline;">Mirror</span> tiled <span style="font-weight: bold; font-style: italic;">|||</span> threeCol <span style="font-weight: bold; font-style: italic;">|||</span> <span style="font-weight: bold; text-decoration: underline;">Full</span>)
-      <span style="font-weight: bold;">where</span>
-        threeCol <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-weight: bold; text-decoration: underline;">ThreeColMid</span> nmaster delta ratio
+<pre class="src src-haskell"><span class="org-haskell-definition">myLayout</span> <span class="org-haskell-operator">=</span> avoidStruts
+           <span class="org-haskell-operator">$</span> mkToggle (<span class="org-haskell-constructor">NBFULL</span> <span class="org-haskell-operator">??</span> <span class="org-haskell-constructor">NOBORDERS</span> <span class="org-haskell-operator">??</span> <span class="org-haskell-constructor">EOT</span>) myDefaultLayout
+  <span class="org-haskell-keyword">where</span>
+    myDefaultLayout <span class="org-haskell-operator">=</span> (tiled <span class="org-haskell-operator">|||</span> <span class="org-haskell-constructor">Mirror</span> tiled <span class="org-haskell-operator">|||</span> threeCol <span class="org-haskell-operator">|||</span> <span class="org-haskell-constructor">Full</span>)
+      <span class="org-haskell-keyword">where</span>
+        threeCol <span class="org-haskell-operator">=</span> <span class="org-haskell-constructor">ThreeColMid</span> nmaster delta ratio
 
-        <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">default tiling algorithm partitions the screen into two panes</span>
-        tiled   <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-weight: bold; text-decoration: underline;">Tall</span> nmaster delta ratio
+        <span class="org-comment-delimiter">-- </span><span class="org-comment">default tiling algorithm partitions the screen into two panes</span>
+        tiled   <span class="org-haskell-operator">=</span> <span class="org-haskell-constructor">Tall</span> nmaster delta ratio
 
-        <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">The default number of windows in the master pane</span>
-        nmaster <span style="font-weight: bold; font-style: italic;">=</span> 1
+        <span class="org-comment-delimiter">-- </span><span class="org-comment">The default number of windows in the master pane</span>
+        nmaster <span class="org-haskell-operator">=</span> 1
 
-        <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">Default proportion of screen occupied by master pane</span>
-        ratio   <span style="font-weight: bold; font-style: italic;">=</span> 1<span style="font-weight: bold; font-style: italic;">/</span>2
+        <span class="org-comment-delimiter">-- </span><span class="org-comment">Default proportion of screen occupied by master pane</span>
+        ratio   <span class="org-haskell-operator">=</span> 1<span class="org-haskell-operator">/</span>2
 
-        <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">Percent of screen to increment by when resizing panes</span>
-        delta   <span style="font-weight: bold; font-style: italic;">=</span> 3<span style="font-weight: bold; font-style: italic;">/</span>100
+        <span class="org-comment-delimiter">-- </span><span class="org-comment">Percent of screen to increment by when resizing panes</span>
+        delta   <span class="org-haskell-operator">=</span> 3<span class="org-haskell-operator">/</span>100
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-orgd292c2d" class="outline-3">
-<h3 id="orgd292c2d">Hooks</h3>
-<div class="outline-text-3" id="text-orgd292c2d">
+<div id="outline-container-org8e5b807" class="outline-3">
+<h3 id="org8e5b807">Hooks</h3>
+<div class="outline-text-3" id="text-org8e5b807">
 <div class="org-src-container">
-<pre class="src src-haskell"><span style="font-weight: bold; font-style: italic;">--</span><span style="font-weight: bold; font-style: italic;">----------------------------------------------------------------------</span>
-<span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">Window rules:</span>
-<span style="font-weight: bold;">myManageHook</span> <span style="font-weight: bold; font-style: italic;">=</span> composeAll
-    [ className <span style="font-weight: bold; font-style: italic;">=?</span> <span style="font-style: italic;">"MPlayer"</span>        <span style="font-weight: bold; font-style: italic;">--&gt;</span> doFloat
-    , className <span style="font-weight: bold; font-style: italic;">=?</span> <span style="font-style: italic;">"Gimp"</span>           <span style="font-weight: bold; font-style: italic;">--&gt;</span> doFloat
-    , className <span style="font-weight: bold; font-style: italic;">=?</span> <span style="font-style: italic;">"Emacs"</span>          <span style="font-weight: bold; font-style: italic;">--&gt;</span> doShift <span style="font-style: italic;">"2:emacs"</span>
-    , className <span style="font-weight: bold; font-style: italic;">=?</span> <span style="font-style: italic;">"Alacritty"</span>      <span style="font-weight: bold; font-style: italic;">--&gt;</span> doShift <span style="font-style: italic;">"3:term"</span>
-    , className <span style="font-weight: bold; font-style: italic;">=?</span> <span style="font-style: italic;">"firefox"</span>  <span style="font-weight: bold; font-style: italic;">--&gt;</span> doShift <span style="font-style: italic;">"4:web"</span>
-    , resource  <span style="font-weight: bold; font-style: italic;">=?</span> <span style="font-style: italic;">"desktop_window"</span> <span style="font-weight: bold; font-style: italic;">--&gt;</span> doIgnore
-    , resource  <span style="font-weight: bold; font-style: italic;">=?</span> <span style="font-style: italic;">"kdesktop"</span>       <span style="font-weight: bold; font-style: italic;">--&gt;</span> doIgnore ]
+<pre class="src src-haskell"><span class="org-comment-delimiter">--</span><span class="org-comment">----------------------------------------------------------------------</span>
+<span class="org-comment-delimiter">-- </span><span class="org-comment">Window rules:</span>
+<span class="org-haskell-definition">myManageHook</span> <span class="org-haskell-operator">=</span> composeAll
+    [ className <span class="org-haskell-operator">=?</span> <span class="org-string">"MPlayer"</span>        <span class="org-haskell-operator">--&gt;</span> doFloat
+    , className <span class="org-haskell-operator">=?</span> <span class="org-string">"Gimp"</span>           <span class="org-haskell-operator">--&gt;</span> doFloat
+    , className <span class="org-haskell-operator">=?</span> <span class="org-string">"Emacs"</span>          <span class="org-haskell-operator">--&gt;</span> doShift <span class="org-string">"2:emacs"</span>
+    , className <span class="org-haskell-operator">=?</span> <span class="org-string">"Alacritty"</span>      <span class="org-haskell-operator">--&gt;</span> doShift <span class="org-string">"3:term"</span>
+    , className <span class="org-haskell-operator">=?</span> <span class="org-string">"firefox"</span>  <span class="org-haskell-operator">--&gt;</span> doShift <span class="org-string">"4:web"</span>
+    , resource  <span class="org-haskell-operator">=?</span> <span class="org-string">"desktop_window"</span> <span class="org-haskell-operator">--&gt;</span> doIgnore
+    , resource  <span class="org-haskell-operator">=?</span> <span class="org-string">"kdesktop"</span>       <span class="org-haskell-operator">--&gt;</span> doIgnore ]
 
-<span style="font-weight: bold; font-style: italic;">--</span><span style="font-weight: bold; font-style: italic;">----------------------------------------------------------------------</span>
-<span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">Event handling</span>
+<span class="org-comment-delimiter">--</span><span class="org-comment">----------------------------------------------------------------------</span>
+<span class="org-comment-delimiter">-- </span><span class="org-comment">Event handling</span>
 
-<span style="font-style: italic;">-- * EwmhDesktops users should change this to ewmhDesktopsEventHook</span>
-<span style="font-style: italic;">--</span>
-<span style="font-style: italic;">-- Defines a custom handler function for X Events. The function should</span>
-<span style="font-style: italic;">-- return (All True) if the default handler is to be run afterwards. To</span>
-<span style="font-style: italic;">-- combine event hooks use mappend or mconcat from Data.Monoid.</span>
-<span style="font-style: italic;">--</span>
-<span style="font-weight: bold;">myEventHook</span> <span style="font-weight: bold; font-style: italic;">=</span> mempty
+<span class="org-doc">-- * EwmhDesktops users should change this to ewmhDesktopsEventHook</span>
+<span class="org-doc">--</span>
+<span class="org-doc">-- Defines a custom handler function for X Events. The function should</span>
+<span class="org-doc">-- return (All True) if the default handler is to be run afterwards. To</span>
+<span class="org-doc">-- combine event hooks use mappend or mconcat from Data.Monoid.</span>
+<span class="org-doc">--</span>
+<span class="org-haskell-definition">myEventHook</span> <span class="org-haskell-operator">=</span> mempty
 
-<span style="font-weight: bold; font-style: italic;">--</span><span style="font-weight: bold; font-style: italic;">----------------------------------------------------------------------</span>
-<span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">Status bars and logging</span>
+<span class="org-comment-delimiter">--</span><span class="org-comment">----------------------------------------------------------------------</span>
+<span class="org-comment-delimiter">-- </span><span class="org-comment">Status bars and logging</span>
 
-<span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">Perform an arbitrary action on each internal state change or X event.</span>
-<span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">See the 'XMonad.Hooks.DynamicLog' extension for examples.</span>
-<span style="font-weight: bold; font-style: italic;">--</span>
+<span class="org-comment-delimiter">-- </span><span class="org-comment">Perform an arbitrary action on each internal state change or X event.</span>
+<span class="org-comment-delimiter">-- </span><span class="org-comment">See the 'XMonad.Hooks.DynamicLog' extension for examples.</span>
+<span class="org-comment-delimiter">--</span>
 
-<span style="font-weight: bold;">myLogHook</span> xmproc <span style="font-weight: bold; font-style: italic;">=</span> dynamicLogWithPP <span style="font-weight: bold; font-style: italic;">$</span> xmobarPP
-  {  ppOutput <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-weight: bold; font-style: italic;">\</span>x <span style="font-weight: bold; font-style: italic;">-&gt;</span> hPutStrLn xmproc x
-   , ppCurrent <span style="font-weight: bold; font-style: italic;">=</span> xmobarColor color01 <span style="font-style: italic;">""</span> <span style="font-weight: bold; font-style: italic;">.</span> wrap (<span style="font-style: italic;">"&lt;fc="</span> <span style="font-weight: bold; font-style: italic;">++</span> color01 <span style="font-weight: bold; font-style: italic;">++</span> <span style="font-style: italic;">"&gt;"</span>) <span style="font-style: italic;">"&lt;/fc&gt;"</span>
-   , ppVisible <span style="font-weight: bold; font-style: italic;">=</span> xmobarColor color01 <span style="font-style: italic;">""</span>
-   , ppHidden <span style="font-weight: bold; font-style: italic;">=</span> xmobarColor color02 <span style="font-style: italic;">""</span> <span style="font-weight: bold; font-style: italic;">.</span> wrap (<span style="font-style: italic;">"&lt;fc="</span> <span style="font-weight: bold; font-style: italic;">++</span> color02 <span style="font-weight: bold; font-style: italic;">++</span> <span style="font-style: italic;">"&gt;"</span>) <span style="font-style: italic;">"&lt;/fc&gt;"</span>
-   , ppHiddenNoWindows <span style="font-weight: bold; font-style: italic;">=</span> xmobarColor color02 <span style="font-style: italic;">""</span>
-   , ppTitle <span style="font-weight: bold; font-style: italic;">=</span> xmobarColor color03 <span style="font-style: italic;">""</span> <span style="font-weight: bold; font-style: italic;">.</span> shorten 50
-   , ppSep <span style="font-weight: bold; font-style: italic;">=</span>  <span style="font-style: italic;">" | "</span>
-   , ppExtras  <span style="font-weight: bold; font-style: italic;">=</span> [windowCount]
-   , ppOrder  <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-weight: bold; font-style: italic;">\</span>(ws<span style="font-weight: bold; text-decoration: underline;">:</span>l<span style="font-weight: bold; text-decoration: underline;">:</span>t<span style="font-weight: bold; text-decoration: underline;">:</span>ex) <span style="font-weight: bold; font-style: italic;">-&gt;</span> [ws,l]<span style="font-weight: bold; font-style: italic;">++</span>ex<span style="font-weight: bold; font-style: italic;">++</span>[t]
+<span class="org-haskell-definition">myLogHook</span> xmproc <span class="org-haskell-operator">=</span> dynamicLogWithPP <span class="org-haskell-operator">$</span> xmobarPP
+  {  ppOutput <span class="org-haskell-operator">=</span> <span class="org-haskell-operator">\</span>x <span class="org-haskell-operator">-&gt;</span> hPutStrLn xmproc x
+   , ppCurrent <span class="org-haskell-operator">=</span> xmobarColor color01 <span class="org-string">""</span> <span class="org-haskell-operator">.</span> wrap (<span class="org-string">"&lt;fc="</span> <span class="org-haskell-operator">++</span> color01 <span class="org-haskell-operator">++</span> <span class="org-string">"&gt;"</span>) <span class="org-string">"&lt;/fc&gt;"</span>
+   , ppVisible <span class="org-haskell-operator">=</span> xmobarColor color01 <span class="org-string">""</span>
+   , ppHidden <span class="org-haskell-operator">=</span> xmobarColor color02 <span class="org-string">""</span> <span class="org-haskell-operator">.</span> wrap (<span class="org-string">"&lt;fc="</span> <span class="org-haskell-operator">++</span> color02 <span class="org-haskell-operator">++</span> <span class="org-string">"&gt;"</span>) <span class="org-string">"&lt;/fc&gt;"</span>
+   , ppHiddenNoWindows <span class="org-haskell-operator">=</span> xmobarColor color02 <span class="org-string">""</span>
+   , ppTitle <span class="org-haskell-operator">=</span> xmobarColor color03 <span class="org-string">""</span> <span class="org-haskell-operator">.</span> shorten 50
+   , ppSep <span class="org-haskell-operator">=</span>  <span class="org-string">" | "</span>
+   , ppExtras  <span class="org-haskell-operator">=</span> [windowCount]
+   , ppOrder  <span class="org-haskell-operator">=</span> <span class="org-haskell-operator">\</span>(ws<span class="org-haskell-constructor">:</span>l<span class="org-haskell-constructor">:</span>t<span class="org-haskell-constructor">:</span>ex) <span class="org-haskell-operator">-&gt;</span> [ws,l]<span class="org-haskell-operator">++</span>ex<span class="org-haskell-operator">++</span>[t]
    }
 
-<span style="font-weight: bold; font-style: italic;">--</span><span style="font-weight: bold; font-style: italic;">----------------------------------------------------------------------</span>
-<span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">Startup hook</span>
-<span style="font-weight: bold;">myStartupHook</span> <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-weight: bold;">do</span>
-  spawn <span style="font-style: italic;">"killall trayer"</span>
-  spawnOnce <span style="font-style: italic;">"nitrogen --restore"</span>
-  spawnOnce <span style="font-style: italic;">"picom --config  $HOME/.config/picom/picom.conf"</span>
-  spawnOnce <span style="font-style: italic;">"/usr/bin/emacs --daemon"</span> <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">emacs daemon for the emacsclient</span>
-  spawnOnce <span style="font-style: italic;">"clipmenud"</span>
-  spawnOnce <span style="font-style: italic;">"cbatticon"</span>
-  spawnOnce <span style="font-style: italic;">"nm-applet"</span>
-  spawnOnce <span style="font-style: italic;">"blueman-applet"</span>
-  spawnOnce <span style="font-style: italic;">"volumeicon"</span>
-  spawnOnce <span style="font-style: italic;">"flameshot"</span>
-  spawn (<span style="font-style: italic;">"trayer --distance 10 --margin 18 --edge top --align right --widthtype request --padding 5 --SetDockType true --SetPartialStrut true --expand true --monitor 0 --iconspacing 8 --transparent true --alpha 0 --tint 0x1a1b26 --height 40"</span>)
+<span class="org-comment-delimiter">--</span><span class="org-comment">----------------------------------------------------------------------</span>
+<span class="org-comment-delimiter">-- </span><span class="org-comment">Startup hook</span>
+<span class="org-haskell-definition">myStartupHook</span> <span class="org-haskell-operator">=</span> <span class="org-haskell-keyword">do</span>
+  spawn <span class="org-string">"killall trayer"</span>
+  spawnOnce <span class="org-string">"nitrogen --restore"</span>
+  spawnOnce <span class="org-string">"picom --config  $HOME/.config/picom/picom.conf"</span>
+  spawnOnce <span class="org-string">"/usr/bin/emacs --daemon"</span> <span class="org-comment-delimiter">-- </span><span class="org-comment">emacs daemon for the emacsclient</span>
+  spawnOnce <span class="org-string">"clipmenud"</span>
+  spawnOnce <span class="org-string">"cbatticon"</span>
+  spawnOnce <span class="org-string">"nm-applet"</span>
+  spawnOnce <span class="org-string">"blueman-applet"</span>
+  spawnOnce <span class="org-string">"volumeicon"</span>
+  spawnOnce <span class="org-string">"flameshot"</span>
+  spawn (<span class="org-string">"trayer --distance 10 --margin 18 --edge top --align right --widthtype request --padding 5 --SetDockType true --SetPartialStrut true --expand true --monitor 0 --iconspacing 8 --transparent true --alpha 0 --tint 0x1a1b26 --height 40"</span>)
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-orgb3eb46a" class="outline-3">
-<h3 id="orgb3eb46a">Main</h3>
-<div class="outline-text-3" id="text-orgb3eb46a">
+<div id="outline-container-org04be9f9" class="outline-3">
+<h3 id="org04be9f9">Main</h3>
+<div class="outline-text-3" id="text-org04be9f9">
 <div class="org-src-container">
-<pre class="src src-haskell"><span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">Run xmonad with the settings you specify. No need to modify this.</span>
-<span style="font-weight: bold; font-style: italic;">--</span>
-<span style="font-weight: bold;">main</span> <span style="font-weight: bold; font-style: italic;">=</span> <span style="font-weight: bold;">do</span>
-  xmproc <span style="font-weight: bold; font-style: italic;">&lt;-</span> spawnPipe <span style="font-style: italic;">"xmobar -x 0"</span>
-  xmonad <span style="font-weight: bold; font-style: italic;">$</span>docks <span style="font-weight: bold; font-style: italic;">$</span> defaults xmproc
+<pre class="src src-haskell"><span class="org-comment-delimiter">-- </span><span class="org-comment">Run xmonad with the settings you specify. No need to modify this.</span>
+<span class="org-comment-delimiter">--</span>
+<span class="org-haskell-definition">main</span> <span class="org-haskell-operator">=</span> <span class="org-haskell-keyword">do</span>
+  xmproc <span class="org-haskell-operator">&lt;-</span> spawnPipe <span class="org-string">"xmobar -x 0"</span>
+  xmonad <span class="org-haskell-operator">$</span>docks <span class="org-haskell-operator">$</span> defaults xmproc
 
-<span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">A structure containing your configuration settings, overriding</span>
-<span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">fields in the default config. Any you don't override, will</span>
-<span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">use the defaults defined in xmonad/XMonad/Config.hs</span>
-<span style="font-weight: bold; font-style: italic;">--</span>
-<span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">No need to modify this.</span>
-<span style="font-weight: bold; font-style: italic;">--</span>
-<span style="font-weight: bold;">defaults</span> xmproc <span style="font-weight: bold; font-style: italic;">=</span> def {
-      <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">simple stuff</span>
-        terminal           <span style="font-weight: bold; font-style: italic;">=</span> myTerminal,
-        focusFollowsMouse  <span style="font-weight: bold; font-style: italic;">=</span> myFocusFollowsMouse,
-        clickJustFocuses   <span style="font-weight: bold; font-style: italic;">=</span> myClickJustFocuses,
-        borderWidth        <span style="font-weight: bold; font-style: italic;">=</span> myBorderWidth,
-        modMask            <span style="font-weight: bold; font-style: italic;">=</span> myModMask,
-        workspaces         <span style="font-weight: bold; font-style: italic;">=</span> myWorkspaces,
-        normalBorderColor  <span style="font-weight: bold; font-style: italic;">=</span> myNormalBorderColor,
-        focusedBorderColor <span style="font-weight: bold; font-style: italic;">=</span> myFocusedBorderColor,
+<span class="org-comment-delimiter">-- </span><span class="org-comment">A structure containing your configuration settings, overriding</span>
+<span class="org-comment-delimiter">-- </span><span class="org-comment">fields in the default config. Any you don't override, will</span>
+<span class="org-comment-delimiter">-- </span><span class="org-comment">use the defaults defined in xmonad/XMonad/Config.hs</span>
+<span class="org-comment-delimiter">--</span>
+<span class="org-comment-delimiter">-- </span><span class="org-comment">No need to modify this.</span>
+<span class="org-comment-delimiter">--</span>
+<span class="org-haskell-definition">defaults</span> xmproc <span class="org-haskell-operator">=</span> def {
+      <span class="org-comment-delimiter">-- </span><span class="org-comment">simple stuff</span>
+        terminal           <span class="org-haskell-operator">=</span> myTerminal,
+        focusFollowsMouse  <span class="org-haskell-operator">=</span> myFocusFollowsMouse,
+        clickJustFocuses   <span class="org-haskell-operator">=</span> myClickJustFocuses,
+        borderWidth        <span class="org-haskell-operator">=</span> myBorderWidth,
+        modMask            <span class="org-haskell-operator">=</span> myModMask,
+        workspaces         <span class="org-haskell-operator">=</span> myWorkspaces,
+        normalBorderColor  <span class="org-haskell-operator">=</span> myNormalBorderColor,
+        focusedBorderColor <span class="org-haskell-operator">=</span> myFocusedBorderColor,
 
-      <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">key bindings</span>
-      <span style="font-weight: bold; font-style: italic;">--   </span><span style="font-weight: bold; font-style: italic;">keys               = myKeys,</span>
-        mouseBindings      <span style="font-weight: bold; font-style: italic;">=</span> myMouseBindings,
+      <span class="org-comment-delimiter">-- </span><span class="org-comment">key bindings</span>
+      <span class="org-comment-delimiter">--   </span><span class="org-comment">keys               = myKeys,</span>
+        mouseBindings      <span class="org-haskell-operator">=</span> myMouseBindings,
 
-      <span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">hooks, layouts</span>
-        layoutHook         <span style="font-weight: bold; font-style: italic;">=</span> spacingRaw <span style="font-weight: bold; text-decoration: underline;">False</span> (<span style="font-weight: bold; text-decoration: underline;">Border</span> 10 10 10 10) <span style="font-weight: bold; text-decoration: underline;">True</span> (<span style="font-weight: bold; text-decoration: underline;">Border</span> 10 10 10 10) <span style="font-weight: bold; text-decoration: underline;">True</span> <span style="font-weight: bold; font-style: italic;">$</span> myLayout,
-        manageHook         <span style="font-weight: bold; font-style: italic;">=</span> myManageHook,
-        handleEventHook    <span style="font-weight: bold; font-style: italic;">=</span> myEventHook,
-        logHook            <span style="font-weight: bold; font-style: italic;">=</span> myLogHook xmproc,
-        startupHook        <span style="font-weight: bold; font-style: italic;">=</span> myStartupHook
-    } <span style="font-weight: bold; font-style: italic;">`additionalKeysP`</span> myKeys
+      <span class="org-comment-delimiter">-- </span><span class="org-comment">hooks, layouts</span>
+        layoutHook         <span class="org-haskell-operator">=</span> spacingRaw <span class="org-haskell-constructor">False</span> (<span class="org-haskell-constructor">Border</span> 10 10 10 10) <span class="org-haskell-constructor">True</span> (<span class="org-haskell-constructor">Border</span> 10 10 10 10) <span class="org-haskell-constructor">True</span> <span class="org-haskell-operator">$</span> myLayout,
+        manageHook         <span class="org-haskell-operator">=</span> myManageHook,
+        handleEventHook    <span class="org-haskell-operator">=</span> myEventHook,
+        logHook            <span class="org-haskell-operator">=</span> myLogHook xmproc,
+        startupHook        <span class="org-haskell-operator">=</span> myStartupHook
+    } <span class="org-haskell-operator">`additionalKeysP`</span> myKeys
 </pre>
 </div>
 </div>
 </div>
 </div>
-<div id="outline-container-org8d7bade" class="outline-2">
-<h2 id="org8d7bade">Xprofile</h2>
-<div class="outline-text-2" id="text-org8d7bade">
+<div id="outline-container-org7b92b5c" class="outline-2">
+<h2 id="org7b92b5c">Xprofile</h2>
+<div class="outline-text-2" id="text-org7b92b5c">
 <div class="org-src-container">
 <pre class="src src-shell">xset r rate 400 50
 setxkbmap -option altwin:swap_alt_win
@@ -686,9 +684,9 @@ xmodmap ~/.Xmodmap
 </div>
 </div>
 </div>
-<div id="outline-container-orgfe639f1" class="outline-2">
-<h2 id="orgfe639f1">Xresources</h2>
-<div class="outline-text-2" id="text-orgfe639f1">
+<div id="outline-container-org57b5cdc" class="outline-2">
+<h2 id="org57b5cdc">Xresources</h2>
+<div class="outline-text-2" id="text-org57b5cdc">
 <div class="org-src-container">
 <pre class="src src-conf">Xft.dpi: 144
 
@@ -700,43 +698,43 @@ Xft.hinting: 1
 Xft.antialias: 1
 Xft.rgba: rgb
 
-dmenu.selbackground: <span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">9567e0</span>
+dmenu.selbackground: <span class="org-comment-delimiter">#</span><span class="org-comment">9567e0</span>
 Emacs.font: Roboto Mono-100
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-orgb2e997d" class="outline-2">
-<h2 id="orgb2e997d">Zsh</h2>
-<div class="outline-text-2" id="text-orgb2e997d">
+<div id="outline-container-org679b71a" class="outline-2">
+<h2 id="org679b71a">Zsh</h2>
+<div class="outline-text-2" id="text-org679b71a">
 <div class="org-src-container">
 <pre class="src src-shell">
-<span style="font-weight: bold;">export</span> <span style="font-weight: bold; font-style: italic;">ZSH</span>=<span style="font-style: italic;">"$HOME/.oh-my-zsh"</span>
+<span class="org-builtin">export</span> <span class="org-variable-name">ZSH</span>=<span class="org-string">"$HOME/.oh-my-zsh"</span>
 
-<span style="font-weight: bold; font-style: italic;">plugins</span>=(
+<span class="org-variable-name">plugins</span>=(
     git
     zsh-syntax-highlighting
     zsh-autosuggestions
     colored-man-pages
 )
 
-source $<span style="font-weight: bold; font-style: italic;">ZSH</span>/oh-my-zsh.sh
+source $<span class="org-variable-name">ZSH</span>/oh-my-zsh.sh
 
-<span style="font-weight: bold;">export</span> <span style="font-weight: bold; font-style: italic;">EDITOR</span>=<span style="font-style: italic;">'emacs'</span>
+<span class="org-builtin">export</span> <span class="org-variable-name">EDITOR</span>=<span class="org-string">'emacs'</span>
 
-alias <span style="font-weight: bold; font-style: italic;">config</span>=<span style="font-style: italic;">'/usr/bin/git --git-dir=/home/ibrahim/.cfg/ --work-tree=/home/ibrahim'</span>
-alias <span style="font-weight: bold; font-style: italic;">ls</span>=<span style="font-style: italic;">'exa'</span>
+alias <span class="org-variable-name">config</span>=<span class="org-string">'/usr/bin/git --git-dir=/home/ibrahim/.cfg/ --work-tree=/home/ibrahim'</span>
+alias <span class="org-variable-name">ls</span>=<span class="org-string">'exa'</span>
 
-<span style="font-weight: bold;">eval</span> <span style="font-style: italic;">"$(starship init zsh)"</span>
+<span class="org-builtin">eval</span> <span class="org-string">"$(starship init zsh)"</span>
 
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org5dec364" class="outline-2">
-<h2 id="org5dec364">References</h2>
-<div class="outline-text-2" id="text-org5dec364">
+<div id="outline-container-org7c9cbe0" class="outline-2">
+<h2 id="org7c9cbe0">References</h2>
+<div class="outline-text-2" id="text-org7c9cbe0">
 <ul class="org-ul">
 <li><a href="https://gitlab.com/dwt1/dotfiles/">https://gitlab.com/dwt1/dotfiles/</a></li>
 </ul>
@@ -744,8 +742,7 @@ alias <span style="font-weight: bold; font-style: italic;">ls</span>=<span style
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.3 (<a href="https://orgmode.org">Org</a> mode 9.1.9)</p>
-<p class="validation"></p>
+<footer class="footer center pt-5"><a href="https://www.linkedin.com/in/seyyidibrahimgulec/" target="_blank"><span class="fa-brands fa-linkedin fa-2x"/></a><a href="https://github.com/seyyidibrahimgulec" target="_blank"><span class="fa-brands ml-10 fa-github fa-2x"/></a><p>Made with <quote><a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.3 (<a href="https://orgmode.org">Org</a> mode 9.1.9)</quote></p></footer>
 </div>
 </body>
 </html>

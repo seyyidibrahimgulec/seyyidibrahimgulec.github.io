@@ -10,6 +10,10 @@ body {
   border-bottom: 2px #9b4dca solid;
 }
 
+.footer {
+  border-top: 2px #9b4dca solid;
+}
+
 .navbar ul {
     list-style-type: none;
     margin: 0;
@@ -30,7 +34,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -44,4 +48,16 @@ body {
 
 .first-element {
   padding-left: 0px !important;
+}
+
+.center {
+  text-align: center;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.pt-5 {
+  padding-top: 5px;
 }
