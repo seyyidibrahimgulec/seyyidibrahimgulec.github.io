@@ -34,12 +34,28 @@
                  (li (a (@ (href "/emacs-configuration/index.html")) "Emacs") " ")
                  (li (a (@ (href "/dotfiles/index.html")) "Dotfiles") " "))))))))
 
-;; Customize the HTML output
+(defun ig/site-footer (info)
+  (concat
+   (sxml-to-xml
+    `(footer (@ (class "footer center pt-5"))
+             (a (@ (href "https://www.linkedin.com/in/seyyidibrahimgulec/") (target "_blank"))
+                (span (@ (class "fa-brands fa-linkedin fa-2x") )))
+             (a (@ (href "https://github.com/seyyidibrahimgulec") (target "_blank"))
+                (span (@ (class "fa-brands ml-10 fa-github fa-2x"))))
+             (p "Made with " '(*RAW-STRING* ,(plist-get info :creator)))))))
+
 (setq org-html-preamble  #'ig/site-header
-      org-html-validation-link nil            ;; Don't show validation link
+      org-html-postamble #'ig/site-footer
+      org-html-metadata-timestamp-format "%Y-%m-%d"
+      org-html-checkbox-type 'site-html
+      org-html-html5-fancy nil
+      org-html-htmlize-output-type 'css
+      org-html-self-link-headlines t
       org-html-head-include-scripts nil       ;; Use our own scripts
       org-html-head-include-default-style nil ;; Use our own styles
-      org-html-head "<link rel=\"stylesheet\" href=\"/static/css/miligram.min.css\" /><link rel=\"stylesheet\" href=\"/static/css/style.css\" />")
+      org-html-validation-link nil
+      org-html-doctype "html5"
+      org-html-head "<link rel=\"stylesheet\" href=\"/static/css/miligram.min.css\" /><link rel=\"stylesheet\" href=\"/static/css/style.css\" /><script src=\"https://kit.fontawesome.com/13e97c0bd7.js\" crossorigin=\"anonymous\"></script>")
 
 ;; Define the publishing project
 (setq org-publish-project-alist
@@ -50,7 +66,7 @@
              :publishing-function 'org-html-publish-to-html
              :publishing-directory "./public"
              :with-author nil           ;; Don't include author name
-             :with-creator t            ;; Include Emacs and Org versions in footer
+             :with-creator nil          ;; Don't include Emacs and Org versions in footer
              :with-toc t                ;; Include a table of contents
              :section-numbers nil       ;; Don't include section numbers
              :time-stamp-file nil)))    ;; Don't include time stamp in file
