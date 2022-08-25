@@ -50,6 +50,7 @@
       org-html-checkbox-type 'site-html
       org-html-html5-fancy nil
       org-html-htmlize-output-type 'css
+      org-html-htmlize-font-prefix "org-"
       org-html-self-link-headlines t
       org-html-head-include-scripts nil       ;; Use our own scripts
       org-html-head-include-default-style nil ;; Use our own styles
