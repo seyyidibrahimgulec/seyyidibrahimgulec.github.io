@@ -60,7 +60,6 @@
   (straight-use-package 'use-package)
   (setq straight-use-package-by-default t)
 #+end_src
-
 * Performance Optimization
 #+begin_src emacs-lisp :tangle early-init.el
   (add-to-list 'default-frame-alist '(undecorated . t))
@@ -364,13 +363,6 @@
   (use-package aggressive-indent
     :hook (emacs-lisp-mode . aggressive-indent-mode))
 #+end_src
-*** Javascript
-#+begin_src emacs-lisp :tangle config.el
-  (use-package js
-    :hook (js-jsx-mode . lsp-deferred)
-    :mode
-    ("\\.js\\'"        . js-jsx-mode))
-#+end_src
 *** Vimrc Mode
 #+begin_src emacs-lisp :tangle config.el
   (use-package vimrc-mode)
@@ -654,16 +646,6 @@
 #+begin_src emacs-lisp :tangle config.el
   (use-package git-link
     :commands git-link)
-#+end_src
-* Elfeed
-#+begin_src emacs-lisp :tangle config.el
-  (use-package elfeed
-    :ensure t
-    :custom
-    (elfeed-feeds
-     '("https://hnrss.org/whoishiring/jobs?q=django"       "https://mshibanami.github.io/GitHubTrendingRSS/weekly/emacs-lisp.xml"    "https://mshibanami.github.io/GitHubTrendingRSS/monthly/python.xml"
-       "https://www.youtube.com/feeds/videos.xml?channel_id=UCYO_jab_esuFRV4b17AJtAw"
-       "https://t24.com.tr/rss/haber/gundem")))
 #+end_src
 * Extra Tools
 ** Winner

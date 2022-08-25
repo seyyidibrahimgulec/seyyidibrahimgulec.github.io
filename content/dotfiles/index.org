@@ -1,7 +1,6 @@
 #+title: My personal dotfiles
 * Screenshot
 [[../static/images/dotfiles-ss-01.png]]
-
 * Alacritty
 #+begin_src yaml :tangle .alacritty.yml
 font:
@@ -256,7 +255,6 @@ keycode 66 = Control_L
 add control = Control_L
 add Lock = Control_R
 #+end_src
-
 * Xmonad
 ** Imports
 #+begin_src haskell :tangle .xmonad/xmonad.hs
@@ -571,6 +569,5 @@ alias ls='exa'
 eval "$(starship init zsh)"
 
 #+end_src
-
 * References
 - [[https://gitlab.com/dwt1/dotfiles/][https://gitlab.com/dwt1/dotfiles/]]
