@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>My personal dotfiles</title>
 <meta name="generator" content="Org mode">
-<link rel="stylesheet" href="/static/css/miligram.min.css" /><link rel="stylesheet" href="/static/css/style.css" /><script src="https://kit.fontawesome.com/13e97c0bd7.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/static/css/miligram.min.css" /><link rel="stylesheet" href="/static/css/style.css" /><script src="https://kit.fontawesome.com/13e97c0bd7.js" crossorigin="anonymous"></script><script src="/static/js/main.js"></script>
 </head>
 <body>
 <div id="preamble" class="status">
-<div><div class="navbar"><ul class="nav"><li><a class="first-element" href="/">Homepage</a> </li><li><a href="/emacs-configuration/index.html">Emacs</a> </li><li><a href="/dotfiles/index.html">Dotfiles</a> </li></ul></div></div>
+<div><div class="navbar" id="myNavbar"><a class="first-element" href="/">Homepage</a><a href="/emacs-configuration/index.html">Emacs</a><a href="/dotfiles/index.html">Dotfiles</a><a href="javascript:void(0);" class="icon" onclick="myFunction()"><span class="fa fa-bars"/></a></div></div>
 </div>
 <div id="content">
 <h1 class="title">My personal dotfiles</h1>
@@ -17,38 +17,38 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org56a9617">Screenshot</a></li>
-<li><a href="#orgc0f0505">Alacritty</a></li>
-<li><a href="#org746648a">Bash</a></li>
-<li><a href="#orgba5a19d">Emacs</a></li>
-<li><a href="#orge748903">Gtk</a></li>
-<li><a href="#orgb46281e">Starship</a></li>
-<li><a href="#orgc1f2649">Tmux</a></li>
-<li><a href="#org7edee3b">Tridactyl</a></li>
-<li><a href="#orgb16664a">Volumeicon</a></li>
-<li><a href="#orgadc9118">Xmobar</a></li>
-<li><a href="#org4ed890a">Xmodmap</a></li>
-<li><a href="#orgbfb639e">Xmonad</a>
+<li><a href="#org273009d">Screenshot</a></li>
+<li><a href="#org1d00364">Alacritty</a></li>
+<li><a href="#org33d31fd">Bash</a></li>
+<li><a href="#orgd2a881b">Emacs</a></li>
+<li><a href="#orgaf42547">Gtk</a></li>
+<li><a href="#org2cbba75">Starship</a></li>
+<li><a href="#org913a962">Tmux</a></li>
+<li><a href="#orgeed5346">Tridactyl</a></li>
+<li><a href="#org28edbd1">Volumeicon</a></li>
+<li><a href="#org506031f">Xmobar</a></li>
+<li><a href="#org33eb122">Xmodmap</a></li>
+<li><a href="#orgde98df6">Xmonad</a>
 <ul>
-<li><a href="#orgfb2b4c4">Imports</a></li>
-<li><a href="#orgd5e5f0b">Variables</a></li>
-<li><a href="#orge77f828">Key Bindings</a></li>
-<li><a href="#org1b5ddf5">Mouse Bindings</a></li>
-<li><a href="#org66b9263">Layout</a></li>
-<li><a href="#orga7ca5ff">Hooks</a></li>
-<li><a href="#orgb4ca4b9">Main</a></li>
+<li><a href="#org83d9277">Imports</a></li>
+<li><a href="#orgff61148">Variables</a></li>
+<li><a href="#org674aa57">Key Bindings</a></li>
+<li><a href="#org0261b1e">Mouse Bindings</a></li>
+<li><a href="#org2def75f">Layout</a></li>
+<li><a href="#org56c70f0">Hooks</a></li>
+<li><a href="#org77f5f3b">Main</a></li>
 </ul>
 </li>
-<li><a href="#org4579573">Xprofile</a></li>
-<li><a href="#org48a34ae">Xresources</a></li>
-<li><a href="#org8b9dbf2">Zsh</a></li>
-<li><a href="#org37e3fb8">References</a></li>
+<li><a href="#org23657d2">Xprofile</a></li>
+<li><a href="#orgc2f6c6d">Xresources</a></li>
+<li><a href="#org468f670">Zsh</a></li>
+<li><a href="#orgeebbbdf">References</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org56a9617" class="outline-2">
-<h2 id="org56a9617">Screenshot</h2>
-<div class="outline-text-2" id="text-org56a9617">
+<div id="outline-container-org273009d" class="outline-2">
+<h2 id="org273009d">Screenshot</h2>
+<div class="outline-text-2" id="text-org273009d">
 
 <div class="figure">
 <p><img src="../static/images/dotfiles-ss-01.png" alt="dotfiles-ss-01.png">
@@ -56,9 +56,9 @@
 </div>
 </div>
 </div>
-<div id="outline-container-orgc0f0505" class="outline-2">
-<h2 id="orgc0f0505">Alacritty</h2>
-<div class="outline-text-2" id="text-orgc0f0505">
+<div id="outline-container-org1d00364" class="outline-2">
+<h2 id="org1d00364">Alacritty</h2>
+<div class="outline-text-2" id="text-org1d00364">
 <div class="org-src-container">
 <pre class="src src-yaml"><span class="org-variable-name">font</span>:
   <span class="org-variable-name">normal</span>:
@@ -145,9 +145,9 @@
 </div>
 </div>
 </div>
-<div id="outline-container-org746648a" class="outline-2">
-<h2 id="org746648a">Bash</h2>
-<div class="outline-text-2" id="text-org746648a">
+<div id="outline-container-org33d31fd" class="outline-2">
+<h2 id="org33d31fd">Bash</h2>
+<div class="outline-text-2" id="text-org33d31fd">
 <div class="org-src-container">
 <pre class="src src-shell"><span class="org-comment-delimiter">#</span>
 <span class="org-comment-delimiter"># </span><span class="org-comment">~/.bashrc</span>
@@ -163,17 +163,17 @@ alias <span class="org-variable-name">config</span>=<span class="org-string">'/u
 </div>
 </div>
 </div>
-<div id="outline-container-orgba5a19d" class="outline-2">
-<h2 id="orgba5a19d">Emacs</h2>
-<div class="outline-text-2" id="text-orgba5a19d">
+<div id="outline-container-orgd2a881b" class="outline-2">
+<h2 id="orgd2a881b">Emacs</h2>
+<div class="outline-text-2" id="text-orgd2a881b">
 <ul class="org-ul">
 <li><a href="https://github.com/seyyidibrahimgulec/.emacs.d">My emacs configuration</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orge748903" class="outline-2">
-<h2 id="orge748903">Gtk</h2>
-<div class="outline-text-2" id="text-orge748903">
+<div id="outline-container-orgaf42547" class="outline-2">
+<h2 id="orgaf42547">Gtk</h2>
+<div class="outline-text-2" id="text-orgaf42547">
 <div class="org-src-container">
 <pre class="src src-conf">[<span class="org-type">Settings</span>]
 <span class="org-variable-name">gtk-key-theme-name</span> = Emacs
@@ -183,9 +183,9 @@ alias <span class="org-variable-name">config</span>=<span class="org-string">'/u
 </div>
 </div>
 </div>
-<div id="outline-container-orgb46281e" class="outline-2">
-<h2 id="orgb46281e">Starship</h2>
-<div class="outline-text-2" id="text-orgb46281e">
+<div id="outline-container-org2cbba75" class="outline-2">
+<h2 id="org2cbba75">Starship</h2>
+<div class="outline-text-2" id="text-org2cbba75">
 <div class="org-src-container">
 <pre class="src src-conf">[<span class="org-type">character</span>]
 <span class="org-variable-name">success_symbol</span> = <span class="org-string">"[&#955;](bold #9567e0) "</span>
@@ -194,9 +194,9 @@ alias <span class="org-variable-name">config</span>=<span class="org-string">'/u
 </div>
 </div>
 </div>
-<div id="outline-container-orgc1f2649" class="outline-2">
-<h2 id="orgc1f2649">Tmux</h2>
-<div class="outline-text-2" id="text-orgc1f2649">
+<div id="outline-container-org913a962" class="outline-2">
+<h2 id="org913a962">Tmux</h2>
+<div class="outline-text-2" id="text-org913a962">
 <div class="org-src-container">
 <pre class="src src-conf"><span class="org-comment-delimiter"># </span><span class="org-comment">start with mouse mode enabled</span>
 set -g mouse on
@@ -215,9 +215,9 @@ run <span class="org-string">'~/.tmux/plugins/tpm/tpm'</span>
 </div>
 </div>
 </div>
-<div id="outline-container-org7edee3b" class="outline-2">
-<h2 id="org7edee3b">Tridactyl</h2>
-<div class="outline-text-2" id="text-org7edee3b">
+<div id="outline-container-orgeed5346" class="outline-2">
+<h2 id="orgeed5346">Tridactyl</h2>
+<div class="outline-text-2" id="text-orgeed5346">
 <div class="org-src-container">
 <pre class="src src-vimrc">sanitise tridactyllocal tridactylsync
 colors midnight
@@ -274,9 +274,9 @@ bind <span class="org-constant">&gt;&gt;</span> ttindent_recursively current
 </div>
 </div>
 </div>
-<div id="outline-container-orgb16664a" class="outline-2">
-<h2 id="orgb16664a">Volumeicon</h2>
-<div class="outline-text-2" id="text-orgb16664a">
+<div id="outline-container-org28edbd1" class="outline-2">
+<h2 id="org28edbd1">Volumeicon</h2>
+<div class="outline-text-2" id="text-org28edbd1">
 <div class="org-src-container">
 <pre class="src src-conf">[<span class="org-type">Alsa</span>]
 <span class="org-variable-name">card</span>=default
@@ -307,9 +307,9 @@ bind <span class="org-constant">&gt;&gt;</span> ttindent_recursively current
 </div>
 </div>
 </div>
-<div id="outline-container-orgadc9118" class="outline-2">
-<h2 id="orgadc9118">Xmobar</h2>
-<div class="outline-text-2" id="text-orgadc9118">
+<div id="outline-container-org506031f" class="outline-2">
+<h2 id="org506031f">Xmobar</h2>
+<div class="outline-text-2" id="text-org506031f">
 <div class="org-src-container">
 <pre class="src src-haskell"><span class="org-haskell-constructor">Config</span> { font <span class="org-haskell-operator">=</span> <span class="org-string">"xft:Roboto Mono:pixelsize=19:antialias=true:hinting=true"</span>
        , additionalFonts <span class="org-haskell-operator">=</span> [ <span class="org-string">"xft:Font Awesome 6 Free Solid:pixelsize=18"</span>
@@ -348,9 +348,9 @@ bind <span class="org-constant">&gt;&gt;</span> ttindent_recursively current
 </div>
 </div>
 </div>
-<div id="outline-container-org4ed890a" class="outline-2">
-<h2 id="org4ed890a">Xmodmap</h2>
-<div class="outline-text-2" id="text-org4ed890a">
+<div id="outline-container-org33eb122" class="outline-2">
+<h2 id="org33eb122">Xmodmap</h2>
+<div class="outline-text-2" id="text-org33eb122">
 <div class="org-src-container">
 <pre class="src src-conf">clear lock
 clear control
@@ -361,13 +361,13 @@ clear control
 </div>
 </div>
 </div>
-<div id="outline-container-orgbfb639e" class="outline-2">
-<h2 id="orgbfb639e">Xmonad</h2>
-<div class="outline-text-2" id="text-orgbfb639e">
+<div id="outline-container-orgde98df6" class="outline-2">
+<h2 id="orgde98df6">Xmonad</h2>
+<div class="outline-text-2" id="text-orgde98df6">
 </div>
-<div id="outline-container-orgfb2b4c4" class="outline-3">
-<h3 id="orgfb2b4c4">Imports</h3>
-<div class="outline-text-3" id="text-orgfb2b4c4">
+<div id="outline-container-org83d9277" class="outline-3">
+<h3 id="org83d9277">Imports</h3>
+<div class="outline-text-3" id="text-org83d9277">
 <div class="org-src-container">
 <pre class="src src-haskell"><span class="org-haskell-keyword">import</span> <span class="org-haskell-constructor">XMonad</span>
 <span class="org-haskell-keyword">import</span> <span class="org-haskell-constructor">Data.Maybe</span> (isJust)
@@ -393,9 +393,9 @@ clear control
 </div>
 </div>
 </div>
-<div id="outline-container-orgd5e5f0b" class="outline-3">
-<h3 id="orgd5e5f0b">Variables</h3>
-<div class="outline-text-3" id="text-orgd5e5f0b">
+<div id="outline-container-orgff61148" class="outline-3">
+<h3 id="orgff61148">Variables</h3>
+<div class="outline-text-3" id="text-orgff61148">
 <div class="org-src-container">
 <pre class="src src-haskell"><span class="org-haskell-definition">myTerminal</span>      <span class="org-haskell-operator">=</span> <span class="org-string">"alacritty"</span>
 
@@ -437,9 +437,9 @@ clear control
 </div>
 </div>
 </div>
-<div id="outline-container-orge77f828" class="outline-3">
-<h3 id="orge77f828">Key Bindings</h3>
-<div class="outline-text-3" id="text-orge77f828">
+<div id="outline-container-org674aa57" class="outline-3">
+<h3 id="org674aa57">Key Bindings</h3>
+<div class="outline-text-3" id="text-org674aa57">
 <div class="org-src-container">
 <pre class="src src-haskell"><span class="org-haskell-definition">myKeys</span> <span class="org-haskell-operator">::</span> [(<span class="org-haskell-type">String</span>, <span class="org-haskell-type">X</span> <span class="org-haskell-constructor">()</span>)]
 <span class="org-haskell-definition">myKeys</span> <span class="org-haskell-operator">=</span>
@@ -515,9 +515,9 @@ clear control
 </div>
 </div>
 </div>
-<div id="outline-container-org1b5ddf5" class="outline-3">
-<h3 id="org1b5ddf5">Mouse Bindings</h3>
-<div class="outline-text-3" id="text-org1b5ddf5">
+<div id="outline-container-org0261b1e" class="outline-3">
+<h3 id="org0261b1e">Mouse Bindings</h3>
+<div class="outline-text-3" id="text-org0261b1e">
 <div class="org-src-container">
 <pre class="src src-haskell"><span class="org-comment-delimiter">-- </span><span class="org-comment">Mouse bindings</span>
 <span class="org-haskell-definition">myMouseBindings</span> (<span class="org-haskell-constructor">XConfig</span> {XMonad.modMask <span class="org-haskell-operator">=</span> modm}) <span class="org-haskell-operator">=</span> M.fromList <span class="org-haskell-operator">$</span>
@@ -539,9 +539,9 @@ clear control
 </div>
 </div>
 </div>
-<div id="outline-container-org66b9263" class="outline-3">
-<h3 id="org66b9263">Layout</h3>
-<div class="outline-text-3" id="text-org66b9263">
+<div id="outline-container-org2def75f" class="outline-3">
+<h3 id="org2def75f">Layout</h3>
+<div class="outline-text-3" id="text-org2def75f">
 <div class="org-src-container">
 <pre class="src src-haskell"><span class="org-haskell-definition">myLayout</span> <span class="org-haskell-operator">=</span> avoidStruts
            <span class="org-haskell-operator">$</span> mkToggle (<span class="org-haskell-constructor">NBFULL</span> <span class="org-haskell-operator">??</span> <span class="org-haskell-constructor">NOBORDERS</span> <span class="org-haskell-operator">??</span> <span class="org-haskell-constructor">EOT</span>) myDefaultLayout
@@ -565,9 +565,9 @@ clear control
 </div>
 </div>
 </div>
-<div id="outline-container-orga7ca5ff" class="outline-3">
-<h3 id="orga7ca5ff">Hooks</h3>
-<div class="outline-text-3" id="text-orga7ca5ff">
+<div id="outline-container-org56c70f0" class="outline-3">
+<h3 id="org56c70f0">Hooks</h3>
+<div class="outline-text-3" id="text-org56c70f0">
 <div class="org-src-container">
 <pre class="src src-haskell"><span class="org-comment-delimiter">--</span><span class="org-comment">----------------------------------------------------------------------</span>
 <span class="org-comment-delimiter">-- </span><span class="org-comment">Window rules:</span>
@@ -628,9 +628,9 @@ clear control
 </div>
 </div>
 </div>
-<div id="outline-container-orgb4ca4b9" class="outline-3">
-<h3 id="orgb4ca4b9">Main</h3>
-<div class="outline-text-3" id="text-orgb4ca4b9">
+<div id="outline-container-org77f5f3b" class="outline-3">
+<h3 id="org77f5f3b">Main</h3>
+<div class="outline-text-3" id="text-org77f5f3b">
 <div class="org-src-container">
 <pre class="src src-haskell"><span class="org-comment-delimiter">-- </span><span class="org-comment">Run xmonad with the settings you specify. No need to modify this.</span>
 <span class="org-comment-delimiter">--</span>
@@ -671,9 +671,9 @@ clear control
 </div>
 </div>
 </div>
-<div id="outline-container-org4579573" class="outline-2">
-<h2 id="org4579573">Xprofile</h2>
-<div class="outline-text-2" id="text-org4579573">
+<div id="outline-container-org23657d2" class="outline-2">
+<h2 id="org23657d2">Xprofile</h2>
+<div class="outline-text-2" id="text-org23657d2">
 <div class="org-src-container">
 <pre class="src src-shell">xset r rate 400 50
 setxkbmap -option altwin:swap_alt_win
@@ -682,9 +682,9 @@ xmodmap ~/.Xmodmap
 </div>
 </div>
 </div>
-<div id="outline-container-org48a34ae" class="outline-2">
-<h2 id="org48a34ae">Xresources</h2>
-<div class="outline-text-2" id="text-org48a34ae">
+<div id="outline-container-orgc2f6c6d" class="outline-2">
+<h2 id="orgc2f6c6d">Xresources</h2>
+<div class="outline-text-2" id="text-orgc2f6c6d">
 <div class="org-src-container">
 <pre class="src src-conf">Xft.dpi: 144
 
@@ -702,9 +702,9 @@ Emacs.font: Roboto Mono-100
 </div>
 </div>
 </div>
-<div id="outline-container-org8b9dbf2" class="outline-2">
-<h2 id="org8b9dbf2">Zsh</h2>
-<div class="outline-text-2" id="text-org8b9dbf2">
+<div id="outline-container-org468f670" class="outline-2">
+<h2 id="org468f670">Zsh</h2>
+<div class="outline-text-2" id="text-org468f670">
 <div class="org-src-container">
 <pre class="src src-shell">
 <span class="org-builtin">export</span> <span class="org-variable-name">ZSH</span>=<span class="org-string">"$HOME/.oh-my-zsh"</span>
@@ -729,9 +729,9 @@ alias <span class="org-variable-name">ls</span>=<span class="org-string">'exa'</
 </div>
 </div>
 </div>
-<div id="outline-container-org37e3fb8" class="outline-2">
-<h2 id="org37e3fb8">References</h2>
-<div class="outline-text-2" id="text-org37e3fb8">
+<div id="outline-container-orgeebbbdf" class="outline-2">
+<h2 id="orgeebbbdf">References</h2>
+<div class="outline-text-2" id="text-orgeebbbdf">
 <ul class="org-ul">
 <li><a href="https://gitlab.com/dwt1/dotfiles/">https://gitlab.com/dwt1/dotfiles/</a></li>
 </ul>
