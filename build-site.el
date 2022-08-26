@@ -28,11 +28,12 @@
     (concat
      (sxml-to-xml
       `(div
-        (div (@ (class "navbar"))
-             (ul (@ (class "nav"))
-                 (li (a (@ (class "first-element") (href "/")) "Homepage") " ")
-                 (li (a (@ (href "/emacs-configuration/index.html")) "Emacs") " ")
-                 (li (a (@ (href "/dotfiles/index.html")) "Dotfiles") " "))))))))
+        (div (@ (class "navbar") (id "myNavbar"))
+             (a (@ (class "first-element") (href "/")) "Homepage")
+             (a (@ (href "/emacs-configuration/index.html")) "Emacs")
+             (a (@ (href "/dotfiles/index.html")) "Dotfiles")
+             (a (@ (href "javascript:void(0);") (class "icon") (onclick "myFunction()"))
+                (span (@ (class "fa fa-bars"))))))))))
 
 (defun ig/site-footer (info)
   (concat
@@ -56,7 +57,7 @@
       org-html-head-include-default-style nil ;; Use our own styles
       org-html-validation-link nil
       org-html-doctype "html5"
-      org-html-head "<link rel=\"stylesheet\" href=\"/static/css/miligram.min.css\" /><link rel=\"stylesheet\" href=\"/static/css/style.css\" /><script src=\"https://kit.fontawesome.com/13e97c0bd7.js\" crossorigin=\"anonymous\"></script>")
+      org-html-head "<link rel=\"stylesheet\" href=\"/static/css/miligram.min.css\" /><link rel=\"stylesheet\" href=\"/static/css/style.css\" /><script src=\"https://kit.fontawesome.com/13e97c0bd7.js\" crossorigin=\"anonymous\"></script><script src=\"/static/js/main.js\"></script>")
 
 ;; Define the publishing project
 (setq org-publish-project-alist
