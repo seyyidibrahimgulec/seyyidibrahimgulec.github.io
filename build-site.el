@@ -81,7 +81,7 @@
              :publishing-directory "./public"
              :with-author nil           ;; Don't include author name
              :with-creator nil          ;; Don't include Emacs and Org versions in footer
-             :with-toc t                ;; Include a table of contents
+             :with-toc nil              ;; Don't include a table of contents
              :section-numbers nil       ;; Don't include section numbers
              :time-stamp-file nil)))    ;; Don't include time stamp in file
 
