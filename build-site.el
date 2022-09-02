@@ -10,16 +10,25 @@
 (unless package-archive-contents
   (package-refresh-contents))
 
+;; Install use-package
+(unless (package-installed-p 'use-package)
+  (package-install 'use-package))
+(require 'use-package)
+
 ;; Install dependencies
-(package-install 'htmlize)
-(package-install 'haskell-mode)
-(package-install 'yaml-mode)
-(package-install 'vimrc-mode)
-(package-install 'esxml)
+(use-package htmlize
+  :ensure t)
+(use-package haskell-mode
+  :ensure t)
+(use-package yaml-mode
+  :ensure t)
+(use-package vimrc-mode
+  :ensure t)
+(use-package esxml
+  :ensure t)
 
 ;; Load the publishing system
 (require 'ox-publish)
-(require 'esxml)
 
 (setq make-backup-files nil)
 
