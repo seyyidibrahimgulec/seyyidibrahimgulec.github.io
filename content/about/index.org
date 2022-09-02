@@ -1,0 +1,8 @@
+#+Title: About
+* About me
+I am Seyyid Ibrahim Gulec. I live in Istanbul/Bursa, Turkey. I am a software developer.
+* About the website
+I am planning to publish blog posts on this website in the future. The website currently includes only my literate configuration files.
+This website was generated with [[https://www.gnu.org/software/emacs/][Emacs]] [[https://orgmode.org/][Org Mode]], you can find the source code [[https://github.com/seyyidibrahimgulec/seyyidibrahimgulec.github.io][here]].
+* Contact
+You can reach me on my [[mailto:seyyidibrahimgulec@gmail.com][email]] and [[https://linkedin.com/in/seyyidibrahimgulec][Linkedin]] account.

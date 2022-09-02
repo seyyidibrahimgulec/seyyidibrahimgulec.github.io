@@ -41,6 +41,7 @@
              (a (@ (class "first-element") (href "/")) "Homepage")
              (a (@ (href "/emacs-configuration/index.html")) "Emacs")
              (a (@ (href "/dotfiles/index.html")) "Dotfiles")
+             (a (@ (href "/about/index.html")) "About")
              (a (@ (href "javascript:void(0);") (class "icon") (onclick "myFunction()"))
                 (span (@ (class "fa fa-bars"))))))))))
 
