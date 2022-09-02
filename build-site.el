@@ -38,7 +38,7 @@
      (sxml-to-xml
       `(div
         (div (@ (class "navbar") (id "myNavbar"))
-             (a (@ (class "first-element") (href "/")) "Homepage")
+             (a (@ (class "first-element") (href "/")) "Home")
              (a (@ (href "/emacs-configuration/index.html")) "Emacs")
              (a (@ (href "/dotfiles/index.html")) "Dotfiles")
              (a (@ (href "/about/index.html")) "About")

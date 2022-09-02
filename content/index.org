@@ -1,4 +1,4 @@
-#+TITLE: Homepage
+#+TITLE: Home
 * [[file:about/index.org][About]]
 * Literate Configuration
 - [[file:emacs-configuration/index.org][Emacs]]
