@@ -51,6 +51,8 @@
     `(footer (@ (class "footer center pt-5"))
              (a (@ (href "https://www.linkedin.com/in/seyyidibrahimgulec/") (target "_blank"))
                 (span (@ (class "fa-brands fa-linkedin fa-2x") )))
+             (a (@ (href "mailto:seyyidibrahimgulec@gmail.com") (target "_blank"))
+                (span (@ (class "fa-solid ml-10 fa-envelope fa-2x"))))
              (a (@ (href "https://github.com/seyyidibrahimgulec") (target "_blank"))
                 (span (@ (class "fa-brands ml-10 fa-github fa-2x"))))
              (p "Made with " '(*RAW-STRING* ,(plist-get info :creator)))))))
